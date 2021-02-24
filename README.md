@@ -4,6 +4,6 @@ Projet TERD
 | *Nom et Prenom* | *Pseudo* |
 | ------ | ------ |
 | Belhassen Louay | mohamedlouay |
-| kouss nourhene|  |
-| kharroubi abdelkader|  |
+| kouss nourhene| nkouss |
+| kharroubi abdelkader| abdelkader1996 |
 
