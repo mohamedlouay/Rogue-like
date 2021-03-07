@@ -1,8 +1,10 @@
 class Player {
 
+    private int sante;
     private int x;
     private int y;
-
+    private int arme_id;
+    private int experience;
 
     //initialiser le joueur au position zero
     public Player() {
@@ -23,5 +25,29 @@ class Player {
     {
         this.x=x;
         this.y=y;
+    }
+
+    public int getSante() {
+        return sante;
+    }
+
+    public void setSante(int sante) {
+        this.sante = sante;
+    }
+
+    public int getArme_id() {
+        return arme_id;
+    }
+
+    public void setArme_id(int arme_id) {
+        this.arme_id = arme_id;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
 }
