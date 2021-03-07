@@ -1,6 +1,8 @@
 class Player {
 
     private int sante;
+
+    //position
     private int x;
     private int y;
 
