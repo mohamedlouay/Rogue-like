@@ -5,6 +5,7 @@ class Player {
     private int y;
     private int arme_id;
     private int experience;
+    private int coins ;
 
     //initialiser le joueur au position zero
     public Player() {
@@ -49,5 +50,13 @@ class Player {
 
     public void setExperience(int experience) {
         this.experience = experience;
+    }
+
+    public int getCoins() {
+        return coins;
+    }
+
+    public void setCoins(int coins) {
+        this.coins = coins;
     }
 }
