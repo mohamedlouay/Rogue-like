@@ -38,7 +38,7 @@ public class Map {
 
 
     //lire le fichier map et creer un tableau 2d qui contient cette map
-    public static char[][] readMap(String fileName) throws IOException {
+    public  char[][] readMap(String fileName) throws IOException {
         Path path = Paths.get(fileName);
         List<String> lignes = Files.readAllLines(path);
         int n = lignes.size();
