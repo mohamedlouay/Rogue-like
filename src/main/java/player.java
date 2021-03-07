@@ -3,8 +3,13 @@ class Player {
     private int sante;
     private int x;
     private int y;
+
+    //indice de l arme actuel dans une liste !
     private int arme_id;
+
     private int experience;
+
+    //pour achter des armes / objets
     private int coins ;
 
     //initialiser le joueur au position zero
