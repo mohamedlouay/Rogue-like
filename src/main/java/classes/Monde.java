@@ -5,9 +5,15 @@ public class Monde {
     int hauteur;
     int[][] map;
     Camera camera;
+    Player player;
 
     public void setCamera(Camera camera) {
         this.camera = camera;
+    }
+    public void addPlayer(Player player){
+        this.player=player;
+        map[player.getY()][player.getX()]=2;
+
     }
 
     public Monde(int largeur, int hauteur) {
@@ -56,6 +62,10 @@ public class Monde {
             System.out.println();
         }
     }
+
+
+    public void actulaiser(){}
+
 
 
 }

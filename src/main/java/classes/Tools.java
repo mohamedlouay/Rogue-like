@@ -11,6 +11,8 @@ public class Tools {
                 //afficher un point pour les places disponibles :
             case 1:
                 return '.';
+            case 2:
+                return '@';
             default:
                 return '/';
         }
