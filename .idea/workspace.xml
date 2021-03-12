@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_03_2021_00_09_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_03_2021_00_09__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="update Player-add coins" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +29,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -46,20 +42,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.readMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rogue-like" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="readMapTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MapTest.readMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -100,14 +85,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615113169742</updated>
     </task>
-    <task id="LOCAL-00005" summary="update">
-      <created>1615149154381</created>
+    <task id="LOCAL-00005" summary="add comments">
+      <created>1615113406550</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1615149154381</updated>
+      <updated>1615113406550</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add comments">
+      <created>1615113504869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113504869</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update Player-add coins">
+      <created>1615537006635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615537006635</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,8 +125,8 @@
     <MESSAGE value="add player" />
     <MESSAGE value="add Player" />
     <MESSAGE value="update Player" />
+    <MESSAGE value="add comments" />
     <MESSAGE value="update Player-add coins" />
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Player-add coins" />
   </component>
 </project>
