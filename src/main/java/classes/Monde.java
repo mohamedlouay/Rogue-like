@@ -20,15 +20,18 @@ public class Monde {
               map[i][j]=0;
           }
         }
-        map[1][1]=1;
     }
 
 
     public int[][] getMap() {
         return map;
     }
+
+
     public void ajouterUneSalle(Salle salle){
+
         for (int i=salle.getY() ;i<(salle.getY()+salle.getHauteur()) ;i++){
+            // la valeur 1  indique une place a occuper .
             for (int j=salle.getX(); j<(salle.getX() + salle.getLargeur())  ; j++){
                 map[i][j]=1;
             }
@@ -43,8 +46,11 @@ public class Monde {
         System.out.println("____________________________________________________________________________________________________________________________________________________________________________________________________________________");
         System.out.println();
 
+        // affichage de la partie de projection de la cemera :
+
         for (int i=camera.getY() ; i<(camera.getY()+camera.getHauteur()) ;i++){
             for (int j=camera.getX() ;j<(camera.getX() + camera.getLargeur())  ; j++){
+                //affichage du symbole selon l entier :
                 System.out.print(Tools.getSymbole(map[i][j]));
             }
             System.out.println();

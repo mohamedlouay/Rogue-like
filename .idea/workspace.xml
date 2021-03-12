@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="update Player-add coins">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_03_2021_00_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_03_2021_00_09__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="mise a jour du projet !">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -113,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615537006635</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mise a jour du projet !">
+      <created>1615538478937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538478937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mise a jour du projet !">
+      <created>1615538580470</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538580470</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +151,7 @@
     <MESSAGE value="update Player" />
     <MESSAGE value="add comments" />
     <MESSAGE value="update Player-add coins" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Player-add coins" />
+    <MESSAGE value="mise a jour du projet !" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise a jour du projet !" />
   </component>
 </project>
