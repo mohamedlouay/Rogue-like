@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajouter la classe Player">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajouter la classe Box">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Box.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615543030822</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ajouter deplacement joueur">
+      <created>1616093034928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093034928</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajouter la classe Box">
+      <created>1616093075430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093075430</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +181,8 @@
     <MESSAGE value="ajouter des commentaires" />
     <MESSAGE value="ajouter des commentaires 1" />
     <MESSAGE value="ajouter la classe Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajouter la classe Player" />
+    <MESSAGE value="ajouter deplacement joueur" />
+    <MESSAGE value="ajouter la classe Box" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter la classe Box" />
   </component>
 </project>
