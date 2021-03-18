@@ -3,14 +3,23 @@ package classes;
 import java.util.Random;
 
 public class Box {
-    int x;
-    int y;
-    int valeur;
-    Box(int x,int y){
+    private  boolean estOuvert=false;
+    private int x;
+    private int y;
+    private  int valeur;
+
+    public boolean estOuvert() {
+        return estOuvert;
+    }
+
+    public Box(int x, int y){
         this.x=x;
         this.y=y;
         Random r = new Random();
         this.valeur= r.nextInt((100 - 10) + 1) + 10;
+    }
+    public void open(){
+        estOuvert=true;
     }
 
     public int getX() {

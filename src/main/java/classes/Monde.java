@@ -1,5 +1,6 @@
 package classes;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Monde {
@@ -8,6 +9,7 @@ public class Monde {
     int[][] map;
     Camera camera;
     Player player;
+    ArrayList<Box> boxes;
     Scanner scanner;
 
     public void setCamera(Camera camera) {
@@ -20,11 +22,11 @@ public class Monde {
     }
 
     public Monde(int largeur, int hauteur) {
-        scanner = new Scanner(System.in);
         this.largeur = largeur;
         this.hauteur = hauteur;
         map=new int[hauteur][largeur];
-
+        scanner = new Scanner(System.in);
+        boxes=new ArrayList<>();
         for (int i=0 ;i<hauteur ;i++){
           for (int j=0 ;j<largeur ; j++){
               map[i][j]=0;
@@ -37,7 +39,28 @@ public class Monde {
         return map;
     }
 
+  public void ajouterUneBox(Box box){
+        boxes.add(box);
+      map[box.getY()][box.getX()]=3;
+      map[box.getY()][box.getX()-1]=5;
+      map[box.getY()][box.getX()+1]=5;
+      map[box.getY()-1][box.getX()]=4;
+      map[box.getY()+1][box.getX()]=4;
+      map[box.getY()+1][box.getX()+1]=4;
+      map[box.getY()-1][box.getX()-1]=4;
+      map[box.getY()+1][box.getX()-1]=4;
+      map[box.getY()-1][box.getX()+1]=4;
 
+  }
+public void ouvrirUneBox(){
+        for (Box b:boxes){
+            if (Tools.distance(player.getX(),player.getY(),b.getX(),b.getY())<2 && b.estOuvert()==false){
+                b.open();
+                map[b.getY()][b.getX()]=6;
+                player.setArgent(player.getArgent()+b.getValeur());
+            }
+        }
+}
     public void ajouterUneSalle(Salle salle){
 
         for (int i=salle.getY() ;i<(salle.getY()+salle.getHauteur()) ;i++){
@@ -52,7 +75,7 @@ public class Monde {
         System.out.println();
         System.out.println();
         System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________");
-        System.out.println("                                       SANTE : 100                         EXPERIENCES : 100                    ARGENT : 60$   ");
+        System.out.println("                                       SANTE :"+player.getSante()+"                         EXPERIENCES : "+player.getExp()+"                    ARGENT : "+player.getArgent()+"$   ");
         System.out.println("____________________________________________________________________________________________________________________________________________________________________________________________________________________");
         System.out.println();
 

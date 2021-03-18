@@ -4,7 +4,32 @@ public class Player {
     Monde monde;
     int sante=100;
     int experience=60;
-    int argent=856;
+
+    public void setSante(int sante) {
+        this.sante = sante;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public void setArgent(int argent) {
+        this.argent = argent;
+    }
+
+    public int getSante() {
+        return sante;
+    }
+
+    public int getExp() {
+        return experience;
+    }
+
+    public int getArgent() {
+        return argent;
+    }
+
+    int argent=100;
     int x;
     int y;
 
@@ -58,6 +83,9 @@ public class Player {
                 break;
             case 'q':
                 deplacerAGauche();
+                break;
+            case 'o':
+                monde.ouvrirUneBox();
                 break;
             default :
         }

@@ -13,8 +13,19 @@ public class Tools {
                 return '.';
             case 2:
                 return '@';
+            case 3:
+                return '?';
+            case 4:
+                return '.';
+            case 5:
+                return '|';
+            case 6:
+                return 'X';
             default:
                 return '/';
         }
+    }
+    public static float distance(int x1, int y1,int x2,int y2){
+        return ((x1-x2)^2+(y1-y2)^2)^(1/2);
     }
 }

@@ -1,7 +1,4 @@
-import classes.Camera;
-import classes.Monde;
-import classes.Player;
-import classes.Salle;
+import classes.*;
 
 public class Main {
     //
@@ -25,6 +22,10 @@ public class Main {
         monde.ajouterUneSalle(new Salle(124,20,6,5));
 
         //*******************************************************************
+        // ajouter une Box :
+          monde.ajouterUneBox(new Box(15,10));
+        //********************************************************************
+
         monde.addPlayer(player);
         player.deplacerADroite();
 
