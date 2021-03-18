@@ -1,11 +1,14 @@
 package classes;
 
+import java.util.Scanner;
+
 public class Monde {
     private int largeur;
     int hauteur;
     int[][] map;
     Camera camera;
     Player player;
+    Scanner scanner;
 
     public void setCamera(Camera camera) {
         this.camera = camera;
@@ -17,6 +20,7 @@ public class Monde {
     }
 
     public Monde(int largeur, int hauteur) {
+        scanner = new Scanner(System.in);
         this.largeur = largeur;
         this.hauteur = hauteur;
         map=new int[hauteur][largeur];
@@ -64,7 +68,25 @@ public class Monde {
     }
 
 
-    public void actulaiser(){}
+    public void actulaiser(){
+    this.playGame();
+    }
+    public void playGame() {
+
+
+        while (true)
+        {
+            userInput();
+            this.afficher();
+        }
+
+    }
+
+    private void userInput() {
+        char input ;
+        input = scanner.next().charAt(0);
+        player.actualiser(input);
+    }
 
 
 

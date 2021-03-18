@@ -18,10 +18,49 @@ public class Player {
         this.y=0;
     }
 
-    public void deplacerADroite(){
+    public void deplacerADroite() {
+        if (this.monde.getMap()[this.y][this.x+1] == 1) {
+
+            this.monde.getMap()[this.y][this.x] = 1;
+            this.x++;
+            this.monde.getMap()[this.y][this.x] = 2;
+        }
+    }
+    public void deplacerAGauche() {
+        if (this.monde.getMap()[this.y][this.x-1] == 1) {
+            this.monde.getMap()[this.y][this.x] = 1;
+            this.x--;
+            this.monde.getMap()[this.y][this.x] = 2;
+        }
+    }
+    public void deplacerEnHaut(){
+        if (this.monde.getMap()[this.y-1][this.x]== 1) {
         this.monde.getMap()[this.y][this.x]=1;
-        this.x++;
+        this.y--;
         this.monde.getMap()[this.y][this.x]=2;
+    }}
+    public void deplacerEnBas(){
+        if (this.monde.getMap()[this.y+1][this.x] == 1) {
+        this.monde.getMap()[this.y][this.x]=1;
+        this.y++;
+        this.monde.getMap()[this.y][this.x]=2;
+    }}
+    public void actualiser(char input){
+        switch (input){
+            case 'z':
+                deplacerEnHaut();
+                break;
+            case 'd':
+                deplacerADroite();
+                break;
+            case 's':
+                deplacerEnBas();
+                break;
+            case 'q':
+                deplacerAGauche();
+                break;
+            default :
+        }
     }
 
 
