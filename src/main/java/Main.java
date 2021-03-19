@@ -1,14 +1,13 @@
-import classes.Camera;
-import classes.Monde;
-import classes.Salle;
+import classes.*;
 
 public class Main {
     //
     public static void main(String[] args) {
-        Monde monde;
-        Camera camera;
-        camera= new Camera(0,0,200,40);
-        monde=new Monde(500,500);
+
+        Camera camera= new Camera(0,0,200,40);
+        Monde monde=new Monde(500,500);
+        Player player = new Player(11,6,monde);
+
         monde.setCamera(camera);
         // ajouter des salles :*********************************************
         monde.ajouterUneSalle(new Salle(10,5,20,20));
@@ -23,11 +22,28 @@ public class Main {
         monde.ajouterUneSalle(new Salle(124,20,6,5));
 
         //*******************************************************************
+        // ajouter une Box :
+          monde.ajouterUneBox(new Box(15,10));
+        //********************************************************************
+
+        monde.addPlayer(player);
+        player.deplacerADroite();
+
         camera.setX(0);
 
+
         monde.afficher();
+        monde.actulaiser();
     }
-}
+
+
+
+
+    }
+
+
+
+
 
 
 

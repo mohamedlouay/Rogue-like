@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="a">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modifier la classe Box">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +40,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -108,7 +118,56 @@
       <option name="project" value="LOCAL" />
       <updated>1615537006635</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mise a jour du projet !">
+      <created>1615538478937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538478937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mise a jour du projet !">
+      <created>1615538580470</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538580470</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ajouter des commentaires 1">
+      <created>1615540899753</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615540899753</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ajouter la classe Player">
+      <created>1615543030822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615543030822</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajouter deplacement joueur">
+      <created>1616093034928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093034928</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajouter la classe Box">
+      <created>1616093075430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093075430</updated>
+    </task>
+    <task id="LOCAL-00014" summary="modifier la classe Box">
+      <created>1616093316994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093316994</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +188,13 @@
     <MESSAGE value="update Player" />
     <MESSAGE value="add comments" />
     <MESSAGE value="update Player-add coins" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Player-add coins" />
+    <MESSAGE value="mise a jour du projet !" />
+    <MESSAGE value="ajouter des commentaires" />
+    <MESSAGE value="ajouter des commentaires 1" />
+    <MESSAGE value="ajouter la classe Player" />
+    <MESSAGE value="ajouter deplacement joueur" />
+    <MESSAGE value="ajouter la classe Box" />
+    <MESSAGE value="modifier la classe Box" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifier la classe Box" />
   </component>
 </project>
