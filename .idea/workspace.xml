@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la génération procedurale . probleme : salles isolées">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/test/java/classes/CameraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/classes/MondeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/map3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,6 +38,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -50,7 +50,7 @@
       <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WorldBuilder">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -86,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WorldBuilder" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WorldBuilder" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616364293792</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update">
+      <created>1616364360366</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364360366</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +258,7 @@
     <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
-    <option name="LAST_COMMIT_MESSAGE" value="tester la génération procedurale . probleme : salles isolées" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
