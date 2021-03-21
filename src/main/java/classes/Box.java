@@ -8,15 +8,14 @@ public class Box {
     private int y;
     private  int valeur;
 
-    public boolean estOuvert() {
-        return estOuvert;
-    }
-
     public Box(int x, int y){
         this.x=x;
         this.y=y;
         Random r = new Random();
         this.valeur= r.nextInt((100 - 10) + 1) + 10;
+    }
+    public boolean estOuvert() {
+        return estOuvert;
     }
     public void open(){
         estOuvert=true;

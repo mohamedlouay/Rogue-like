@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modifier la classe Box">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la génération procedurale . probleme : salles isolées">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -36,6 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -46,7 +50,7 @@
       <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.WorldBuilder">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -54,9 +58,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.Test" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorldBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.WorldBuilder" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WorldBuilder" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +199,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616093316994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="creation de l'enumartion Tile">
+      <created>1616363960908</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616363960908</updated>
+    </task>
+    <task id="LOCAL-00016" summary="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées">
+      <created>1616364225390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364225390</updated>
+    </task>
+    <task id="LOCAL-00017" summary="tester la génération procedurale . probleme : salles isolées">
+      <created>1616364293792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364293792</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +248,9 @@
     <MESSAGE value="ajouter deplacement joueur" />
     <MESSAGE value="ajouter la classe Box" />
     <MESSAGE value="modifier la classe Box" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifier la classe Box" />
+    <MESSAGE value="creation de l'enumartion Tile" />
+    <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
+    <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
+    <option name="LAST_COMMIT_MESSAGE" value="tester la génération procedurale . probleme : salles isolées" />
   </component>
 </project>
