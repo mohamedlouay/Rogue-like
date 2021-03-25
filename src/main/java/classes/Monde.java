@@ -18,7 +18,7 @@ public class Monde {
     public Monde(int largeur, int hauteur) {
         this.largeur = largeur;
         this.hauteur = hauteur;
-        this.worldBuilder = new ConstructeurDuMonde( hauteur,  largeur ,  5 ,  15 ,  10);
+        this.worldBuilder = new ConstructeurDuMonde(hauteur, largeur, 5, 15, 10);
         /*map = worldBuilder.getMap();*/
         scanner = new Scanner(System.in);
         boxes = new ArrayList<>();

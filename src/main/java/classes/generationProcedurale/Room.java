@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 
-
 public class Room {
 
     private int x1;
     private int x2;
     private int y1;
     private int y2;
-    public Center center ;
+    public Center center;
 
     public int getX1() {
         return x1;
@@ -33,10 +32,6 @@ public class Room {
     public int h;
 
 
-
-
-
-
     public Room(int x, int y, int w, int h) {
         this.x1 = x;
         this.x2 = x + w;
@@ -53,11 +48,11 @@ public class Room {
     }
 
 
-
 }
+
 class Center {
-    private int centerX ;
-    private int centerY ;
+    private int centerX;
+    private int centerY;
 
     public int getCenterX() {
         return centerX;

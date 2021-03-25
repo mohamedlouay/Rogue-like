@@ -1,8 +1,9 @@
 package classes.generationProcedurale;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-public class ConstructeurDuMonde{
+public class ConstructeurDuMonde {
 
     char[][] map;
     int lignes;
@@ -13,12 +14,12 @@ public class ConstructeurDuMonde{
     ArrayList<Room> rooms = new ArrayList<Room>();
     Random random = new Random();
 
-    public ConstructeurDuMonde(int lignes, int colonnes , int maxRooms ,int  maxRoomSize , int minRoomSize) {
+    public ConstructeurDuMonde(int lignes, int colonnes, int maxRooms, int maxRoomSize, int minRoomSize) {
         this.lignes = lignes;
         this.colonnes = colonnes;
-        this.maxRooms=maxRooms;
-        this.maxRoomSize=maxRoomSize;
-        this.minRoomSize=minRoomSize;
+        this.maxRooms = maxRooms;
+        this.maxRoomSize = maxRoomSize;
+        this.minRoomSize = minRoomSize;
 
         map = initialiser(lignes, colonnes);
         placeRooms();
@@ -168,8 +169,7 @@ public class ConstructeurDuMonde{
 
     }
 
-    public void display()
-    {
+    public void display() {
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[0].length; j++) {
                 System.out.print(map[i][j]);
@@ -179,10 +179,6 @@ public class ConstructeurDuMonde{
 
         }
     }
-
-
-
-
 
 
 }
