@@ -4,6 +4,27 @@ public class Main {
     //
     public static void main(String[] args) {
 
+        World world = new World(40,80);
+        world.display();
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+
         Camera camera= new Camera(0,0,200,40);
         Monde monde=new Monde(500,500);
         Player player = new Player(11,6,monde);
@@ -35,7 +56,7 @@ public class Main {
         monde.afficher();
         monde.actulaiser();
     }
-
+*/
 
 
 

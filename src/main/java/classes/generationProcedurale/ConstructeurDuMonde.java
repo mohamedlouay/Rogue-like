@@ -1,38 +1,33 @@
 package classes.generationProcedurale;
 
+import classes.Tile;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ConstructeurDuMonde {
 
-    char[][] map;
+    Tile[][] map;
     int lignes;
     int colonnes;
-    private int maxRooms = 5;
-    private int maxRoomSize = 15;
-    private int minRoomSize = 10;
-    ArrayList<Room> rooms = new ArrayList<Room>();
+    private int maxRooms ;
+    private int maxRoomSize ;
+    private int minRoomSize ;
     Random random = new Random();
+    ArrayList<Room> rooms = new ArrayList<Room>();
 
-    public ConstructeurDuMonde(int lignes, int colonnes, int maxRooms, int maxRoomSize, int minRoomSize) {
+
+
+    public ConstructeurDuMonde(int lignes, int colonnes , int minRoomSize, int maxRoomSize, int maxRooms) {
         this.lignes = lignes;
         this.colonnes = colonnes;
         this.maxRooms = maxRooms;
         this.maxRoomSize = maxRoomSize;
         this.minRoomSize = minRoomSize;
 
-        map = initialiser(lignes, colonnes);
+        map = create(lignes, colonnes);
         placeRooms();
 
-
-    }
-
-    public int getLignes() {
-        return lignes;
-    }
-
-    public int getColonnes() {
-        return colonnes;
     }
 
     public int getMaxRooms() {
@@ -47,24 +42,23 @@ public class ConstructeurDuMonde {
         return minRoomSize;
     }
 
+    public Tile[][] getMap() {
+        return map;
+    }
     public ArrayList<Room> getRooms() {
         return rooms;
     }
 
-    public char[][] getMap() {
-        return map;
-    }
-
-    private char[][] initialiser(int l, int c) {
-        char[][] vect = new char[l][c];
+    private Tile[][] create(int l, int c) {
+        Tile[][] vect = new Tile[l][c];
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < c; j++) {
 
                 if ((i == 0) || (j == 0) || (i == l - 1) || (j == c - 1))//creer le cadre
                 {
-                    vect[i][j] = '#';
+                    vect[i][j] = Tile.EDGE;
                 } else {
-                    vect[i][j] = ' ';
+                    vect[i][j] = Tile.MUR;
                 }
 
 
@@ -78,7 +72,7 @@ public class ConstructeurDuMonde {
     public void createRoom(Room r) {
         for (int i = r.getY1(); i < r.getY2(); i++) {
             for (int j = r.getX1(); j < r.getX2(); j++) {
-                map[i][j] = '.';
+                map[i][j] = Tile.SOL;
 
             }
 
@@ -86,7 +80,7 @@ public class ConstructeurDuMonde {
     }
 
 
-    public void placeRooms() {
+    private void placeRooms() {
 
 
         int i = 0;
@@ -102,7 +96,7 @@ public class ConstructeurDuMonde {
             boolean failed = false;
 
             for (Room r : rooms) {
-                if (r.intersects(newRoom)) {
+                if (newRoom.intersects(r)) {
                     failed = true;
                     break;
                 }
@@ -141,7 +135,7 @@ public class ConstructeurDuMonde {
         int maxX = Math.max(c1.getCenterX(), c2.getCenterX());
 
         for (int i = minX; i <= maxX; i++) {
-            map[y][i] = '.';
+            map[y][i] = Tile.SOL;
         }
 
 
@@ -163,17 +157,17 @@ public class ConstructeurDuMonde {
         int maxY = Math.max(c1.getCenterY(), c2.getCenterY());
 
         for (int i = minY; i <= maxY; i++) {
-            map[i][x] = '.';
+            map[i][x] = Tile.SOL;
         }
 
 
     }
 
-    public void display() {
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[0].length; j++) {
-                System.out.print(map[i][j]);
 
+    public void display() {
+        for (int i = 0; i < this.lignes; i++) {
+            for (int j = 0; j < this.colonnes; j++) {
+                System.out.print(this.map[i][j]);
             }
             System.out.println();
 
