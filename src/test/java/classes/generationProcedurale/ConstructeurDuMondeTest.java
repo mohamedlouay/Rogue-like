@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructeurDuMondeTest {
 
-    ConstructeurDuMonde worldBuilder= new  ConstructeurDuMonde( 50,  70 , 5 ,15, 10);
+    ConstructeurDuMonde worldBuilder = new ConstructeurDuMonde(50, 70, 5, 15, 10);
 
 
     @Test
@@ -20,8 +20,8 @@ class ConstructeurDuMondeTest {
     @Test
     void placeRooms() {
 
-        for (int i = 0; i < worldBuilder.getRooms().size()-1; i++) {
-            for (int j = i+1; j < worldBuilder.getRooms().size(); j++) {
+        for (int i = 0; i < worldBuilder.getRooms().size() - 1; i++) {
+            for (int j = i + 1; j < worldBuilder.getRooms().size(); j++) {
                 // Vérifier si toutes les salles sont séparées
                 assertFalse(worldBuilder.getRooms().get(i).intersects(worldBuilder.getRooms().get(j)));
 
