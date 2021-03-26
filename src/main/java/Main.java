@@ -1,45 +1,15 @@
 import classes.*;
+import classes.scenes.PlayScene;
 
 public class Main {
     //
     public static void main(String[] args) {
 
-        Camera camera= new Camera(0,0,40,40);
-        Monde monde=new Monde(200,35);
-        Player player = new Player(monde);
+        PlayScene playScene= new PlayScene();
+        playScene.initialiser();
+        playScene.afficher();
+        playScene.actualiser();
 
-        monde.setCamera(camera);
-        /*
-        // ajouter des salles :*********************************************
-        monde.ajouterUneSalle(new Salle(10,5,20,20));
-        monde.ajouterUneSalle(new Salle(40,20,40,10));
-        monde.ajouterUneSalle(new Salle(90,5,70,15));
-        monde.ajouterUneSalle(new Salle(180,5,70,15));
-
-         */
-
-/*
-        //ajouter des passages :
-        monde.ajouterUneSalle(new Salle(30,10,60,2));
-        monde.ajouterUneSalle(new Salle(70,24,60,2));
-        monde.ajouterUneSalle(new Salle(124,20,6,5));
-
- */
-
-        //*******************************************************************
-        // ajouter une Box :
-          monde.ajouterUneBox(new Box(15,10));
-        //********************************************************************
-        //update
-
-        monde.addPlayer(player);
-        player.deplacerADroite();
-
-        camera.setX(0);
-
-
-        monde.afficher();
-        monde.actulaiser();
     }
 
 
