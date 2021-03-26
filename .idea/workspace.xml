@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="génération procedurale :&#10; génère les salles aléatoirement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -31,12 +41,40 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="classes.generationProcedurale" />
+      <recent name="classes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="ConstructeurDuMonde" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.ConstructeurDuMonde" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -44,9 +82,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.Test" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorldBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.WorldBuilder" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructeurDuMondeTest.placeRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="classes.generationProcedurale" />
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.ConstructeurDuMondeTest" />
+      <option name="METHOD_NAME" value="placeRooms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConstructeurDuMondeTest.placeRooms" />
+        <item itemvalue="Application.ConstructeurDuMonde" />
+        <item itemvalue="Application.WorldBuilder" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -59,6 +143,175 @@
       <option name="presentableId" value="Default" />
       <updated>1614191667778</updated>
     </task>
+    <task id="LOCAL-00001" summary="add player">
+      <created>1615112825503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615112825503</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Player">
+      <created>1615112858027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615112858027</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update Player">
+      <created>1615113074400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113074400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update Player-add coins">
+      <created>1615113169742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113169742</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add comments">
+      <created>1615113406550</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113406550</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add comments">
+      <created>1615113504869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113504869</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update Player-add coins">
+      <created>1615537006635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615537006635</updated>
+    </task>
+    <task id="LOCAL-00008" summary="mise a jour du projet !">
+      <created>1615538478937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538478937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mise a jour du projet !">
+      <created>1615538580470</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615538580470</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ajouter des commentaires 1">
+      <created>1615540899753</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615540899753</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ajouter la classe Player">
+      <created>1615543030822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615543030822</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajouter deplacement joueur">
+      <created>1616093034928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093034928</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajouter la classe Box">
+      <created>1616093075430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093075430</updated>
+    </task>
+    <task id="LOCAL-00014" summary="modifier la classe Box">
+      <created>1616093316994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616093316994</updated>
+    </task>
+    <task id="LOCAL-00015" summary="creation de l'enumartion Tile">
+      <created>1616363960908</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616363960908</updated>
+    </task>
+    <task id="LOCAL-00016" summary="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées">
+      <created>1616364225390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364225390</updated>
+    </task>
+    <task id="LOCAL-00017" summary="tester la génération procedurale . probleme : salles isolées">
+      <created>1616364293792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364293792</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update">
+      <created>1616364360366</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364360366</updated>
+    </task>
+    <task id="LOCAL-00019" summary="tests">
+      <created>1616364986673</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1616364986673</updated>
+    </task>
+    <task id="LOCAL-00020" summary="tests">
+      <created>1616365538710</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1616365538710</updated>
+    </task>
+    <task id="LOCAL-00021" summary="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement">
+      <created>1616669143134</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616669143134</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement">
+      <created>1616670039541</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1616670039541</updated>
+    </task>
+    <task id="LOCAL-00023" summary="génération procedurale :&#10; génère les salles aléatoirement">
+      <created>1616670086794</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616670086794</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ajouter la generation procedurale des salles">
+      <created>1616715450019</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616715450019</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +325,28 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add player" />
+    <MESSAGE value="add Player" />
+    <MESSAGE value="update Player" />
+    <MESSAGE value="add comments" />
+    <MESSAGE value="update Player-add coins" />
+    <MESSAGE value="mise a jour du projet !" />
+    <MESSAGE value="ajouter des commentaires" />
+    <MESSAGE value="ajouter des commentaires 1" />
+    <MESSAGE value="ajouter la classe Player" />
+    <MESSAGE value="ajouter deplacement joueur" />
+    <MESSAGE value="ajouter la classe Box" />
+    <MESSAGE value="modifier la classe Box" />
+    <MESSAGE value="creation de l'enumartion Tile" />
+    <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
+    <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
+    <MESSAGE value="update" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
+    <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
+    <MESSAGE value="ajouter la generation procedurale des salles" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter la generation procedurale des salles" />
   </component>
 </project>
