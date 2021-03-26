@@ -4,9 +4,8 @@ public class Main {
     //
     public static void main(String[] args) {
 
-
         Camera camera= new Camera(0,0,40,40);
-        Monde monde=new Monde(100,35);
+        Monde monde=new Monde(200,35);
         Player player = new Player(monde);
 
         monde.setCamera(camera);
