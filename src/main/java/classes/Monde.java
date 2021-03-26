@@ -18,8 +18,8 @@ public class Monde {
     public Monde(int largeur, int hauteur) {
         this.largeur = largeur;
         this.hauteur = hauteur;
-        this.worldBuilder = new ConstructeurDuMonde(hauteur, largeur, 5, 15, 10);
-        /*map = worldBuilder.getMap();*/
+        this.worldBuilder = new ConstructeurDuMonde(hauteur, largeur, 5, 10, 15);
+        map = worldBuilder.getMap();
         scanner = new Scanner(System.in);
         boxes = new ArrayList<>();
 
@@ -35,7 +35,13 @@ public class Monde {
 
     }
 
+    public int getLargeur() {
+        return largeur;
+    }
 
+    public int getHauteur() {
+        return hauteur;
+    }
     public int[][] getMap() {
         return map;
     }
@@ -63,7 +69,7 @@ public class Monde {
             }
         }
     }
-
+/*
     public void ajouterUneSalle(Salle salle) {
 
         for (int i = salle.getY(); i < (salle.getY() + salle.getHauteur()); i++) {
@@ -74,6 +80,8 @@ public class Monde {
         }
     }
 
+ */
+
     public void afficher() {
         System.out.println();
         System.out.println();
@@ -82,8 +90,16 @@ public class Monde {
         System.out.println("____________________________________________________________________________________________________________________________________________________________________________________________________________________");
         System.out.println();
 
-        // affichage de la partie de projection de la cemera :
 
+        for (int i = 0; i < this.hauteur; i++) {
+            for (int j = 0; j < this.largeur; j++) {
+                System.out.print(Tools.getSymbole(map[i][j]));
+            }
+            System.out.println();
+
+        }
+        // affichage de la partie de projection de la cemera :
+/*
         for (int i = camera.getY(); i < (camera.getY() + camera.getHauteur()); i++) {
             for (int j = camera.getX(); j < (camera.getX() + camera.getLargeur()); j++) {
                 //affichage du symbole selon l entier :
@@ -91,6 +107,8 @@ public class Monde {
             }
             System.out.println();
         }
+
+ */
     }
 
 

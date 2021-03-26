@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class ConstructeurDuMonde {
 
-    Tile[][] map;
+    int[][] map;
     int lignes;
     int colonnes;
     private int maxRooms ;
@@ -18,7 +18,7 @@ public class ConstructeurDuMonde {
 
 
 
-    public ConstructeurDuMonde(int lignes, int colonnes , int minRoomSize, int maxRoomSize, int maxRooms) {
+    public ConstructeurDuMonde(int lignes, int colonnes , int maxRooms, int minRoomSize, int maxRoomSize) {
         this.lignes = lignes;
         this.colonnes = colonnes;
         this.maxRooms = maxRooms;
@@ -42,23 +42,23 @@ public class ConstructeurDuMonde {
         return minRoomSize;
     }
 
-    public Tile[][] getMap() {
+    public int[][] getMap() {
         return map;
     }
     public ArrayList<Room> getRooms() {
         return rooms;
     }
 
-    private Tile[][] create(int l, int c) {
-        Tile[][] vect = new Tile[l][c];
+    private int[][] create(int l, int c) {
+        int[][] vect = new int[l][c];
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < c; j++) {
 
                 if ((i == 0) || (j == 0) || (i == l - 1) || (j == c - 1))//creer le cadre
                 {
-                    vect[i][j] = Tile.EDGE;
+                    vect[i][j] = 7;
                 } else {
-                    vect[i][j] = Tile.MUR;
+                    vect[i][j] = 0;
                 }
 
 
@@ -72,7 +72,7 @@ public class ConstructeurDuMonde {
     public void createRoom(Room r) {
         for (int i = r.getY1(); i < r.getY2(); i++) {
             for (int j = r.getX1(); j < r.getX2(); j++) {
-                map[i][j] = Tile.SOL;
+                map[i][j] = 1;
 
             }
 
@@ -135,7 +135,7 @@ public class ConstructeurDuMonde {
         int maxX = Math.max(c1.getCenterX(), c2.getCenterX());
 
         for (int i = minX; i <= maxX; i++) {
-            map[y][i] = Tile.SOL;
+            map[y][i] = 1;
         }
 
 
@@ -157,7 +157,7 @@ public class ConstructeurDuMonde {
         int maxY = Math.max(c1.getCenterY(), c2.getCenterY());
 
         for (int i = minY; i <= maxY; i++) {
-            map[i][x] = Tile.SOL;
+            map[i][x] = 1;
         }
 
 

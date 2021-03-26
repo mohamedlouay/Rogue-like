@@ -1,7 +1,7 @@
 package classes;
 
 import classes.Tile;
-import classes.generationProcedurale.ConstructeurDuMonde;
+/*import classes.generationProcedurale.ConstructeurDuMonde;
 
 public class World {
     private Tile[][] tiles;
@@ -45,5 +45,5 @@ public class World {
 }
 
 
-
+*/
 

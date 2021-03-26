@@ -21,6 +21,8 @@ public class Tools {
                 return '|';
             case 6:
                 return 'X';
+            case 7:
+                return '#';
             default:
                 return '/';
         }

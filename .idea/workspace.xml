@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="génération procedurale :&#10; génère les salles aléatoirement">
-      <change afterPath="$PROJECT_DIR$/src/main/java/classes/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/classes/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Monde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616670086794</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ajouter la generation procedurale des salles">
+      <created>1616715450019</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616715450019</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,6 +346,7 @@
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
-    <option name="LAST_COMMIT_MESSAGE" value="génération procedurale :&#10; génère les salles aléatoirement" />
+    <MESSAGE value="ajouter la generation procedurale des salles" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter la generation procedurale des salles" />
   </component>
 </project>
