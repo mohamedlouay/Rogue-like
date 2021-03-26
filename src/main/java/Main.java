@@ -31,6 +31,7 @@ public class Main {
         // ajouter une Box :
           monde.ajouterUneBox(new Box(15,10));
         //********************************************************************
+        //update
 
         monde.addPlayer(player);
         player.deplacerADroite();
