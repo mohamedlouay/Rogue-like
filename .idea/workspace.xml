@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="creation de la classe GameSystem">
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/GameSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/EnemyAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Center.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2021_23_17__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2021_23_17__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_03_2021_09_30__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_03_2021_09_30__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Box.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/GameSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Monde.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Salle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Tools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/World.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/generationProcedurale/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/scenes/MainScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/scenes/PlayScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/scenes/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/CameraTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/MondeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/PlayerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/generationProcedurale/ConstructeurDuMondeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +51,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,17 +70,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\si louay\Desktop\9raya\2021\semstre 6\projet terd\Rogue-like\src\main\java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\si louay\Desktop\9raya\2021\semstre 6\projet terd\Rogue-like\src\main\java\creatures" />
       <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="classes.generationProcedurale" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="classes.generationProcedurale" />
@@ -59,7 +101,7 @@
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="PATTERN" value="generationProcedurale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,7 +121,7 @@
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="PATTERN" value="generationProcedurale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +134,7 @@
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="PATTERN" value="generationProcedurale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +146,7 @@
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="PATTERN" value="generationProcedurale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

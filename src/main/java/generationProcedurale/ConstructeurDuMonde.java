@@ -1,35 +1,46 @@
-package classes.generationProcedurale;
+package generationProcedurale;
 
-import classes.Tile;
+import creatures.Enemy;
+import creatures.Player;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ConstructeurDuMonde {
 
-    int[][] map;
+    Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms ;
-    private int maxRoomSize ;
-    private int minRoomSize ;
+    private int maxRooms;
+    private int maxRoomSize;
+    private int minRoomSize;
     Random random = new Random();
     ArrayList<Room> rooms = new ArrayList<Room>();
+    ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 
 
-
-    public ConstructeurDuMonde(int lignes, int colonnes , int maxRooms, int minRoomSize, int maxRoomSize) {
+    public ConstructeurDuMonde(Player player,int lignes, int colonnes, int maxRooms, int minRoomSize, int maxRoomSize) {
         this.lignes = lignes;
         this.colonnes = colonnes;
         this.maxRooms = maxRooms;
         this.maxRoomSize = maxRoomSize;
         this.minRoomSize = minRoomSize;
 
-        map = create(lignes, colonnes);
+        tiles = create(lignes, colonnes);
         placeRooms();
+        initPlayerPosition(player);
+        initEnemiesPosition();
 
     }
 
+    //setters
+    public void setTile (int x , int y , Tile t )
+    {
+        tiles[y][x] = t;
+    }
+
+
+    //getters
     public int getMaxRooms() {
         return maxRooms;
     }
@@ -42,23 +53,26 @@ public class ConstructeurDuMonde {
         return minRoomSize;
     }
 
-    public int[][] getMap() {
-        return map;
+    public Tile[][] getTiles() {
+        return tiles;
     }
+
+
     public ArrayList<Room> getRooms() {
         return rooms;
     }
+    public ArrayList<Enemy> getenemies() {return enemies;}
 
-    private int[][] create(int l, int c) {
-        int[][] vect = new int[l][c];
+    private Tile[][] create(int l, int c) {
+        Tile[][] vect = new Tile[l][c];
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < c; j++) {
 
                 if ((i == 0) || (j == 0) || (i == l - 1) || (j == c - 1))//creer le cadre
                 {
-                    vect[i][j] = 7;
+                    vect[i][j] = Tile.EDGE;
                 } else {
-                    vect[i][j] = 0;
+                    vect[i][j] = Tile.MUR;
                 }
 
 
@@ -72,7 +86,7 @@ public class ConstructeurDuMonde {
     public void createRoom(Room r) {
         for (int i = r.getY1(); i < r.getY2(); i++) {
             for (int j = r.getX1(); j < r.getX2(); j++) {
-                map[i][j] = 1;
+                tiles[i][j] = Tile.SOL;
 
             }
 
@@ -135,7 +149,7 @@ public class ConstructeurDuMonde {
         int maxX = Math.max(c1.getCenterX(), c2.getCenterX());
 
         for (int i = minX; i <= maxX; i++) {
-            map[y][i] = 1;
+            tiles[y][i] = Tile.SOL;
         }
 
 
@@ -157,9 +171,37 @@ public class ConstructeurDuMonde {
         int maxY = Math.max(c1.getCenterY(), c2.getCenterY());
 
         for (int i = minY; i <= maxY; i++) {
-            map[i][x] = 1;
+            tiles[i][x] = Tile.SOL;
         }
 
+
+    }
+
+
+    //initialize player position at center of room 1
+    public void initPlayerPosition(Player player)
+    {
+        player.setPositionX(rooms.get(0).getCenter().getCenterX());
+        player.setPositionY(rooms.get(0).getCenter().getCenterY());
+        tiles[player.getPositionY()][player.getPositionX()] = Tile.PLAYER ;
+
+    }
+
+    //Create a room.size number of enemies and fill the array of enemies
+    public void initEnemiesPosition()
+    {
+        int x ;
+        int y ;
+        for (Room r :rooms)
+        {
+            x = r.getX1() + random.nextInt(r.getX2() - r.getX1() );
+            y = r.getY1() + random.nextInt(r.getY2() - r.getY1() );
+
+            setTile(x,y,Tile.ZOMBIE);
+            enemies.add(new Enemy(x,y));
+
+
+        }
 
     }
 
@@ -167,7 +209,7 @@ public class ConstructeurDuMonde {
     public void display() {
         for (int i = 0; i < this.lignes; i++) {
             for (int j = 0; j < this.colonnes; j++) {
-                System.out.print(this.map[i][j]);
+                System.out.print(this.tiles[i][j].getSymbole());
             }
             System.out.println();
 

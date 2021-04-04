@@ -1,26 +1,14 @@
-import classes.*;
-import classes.scenes.PlayScene;
+import java.util.Scanner;
 
 public class Main {
-    //
-    public static void main(String[] args) {
 
-        PlayScene playScene= new PlayScene();
-        playScene.initialiser();
-        playScene.afficher();
-        playScene.actualiser();
-
-    }
+    public static void main(String[] args)  {
 
 
-    //
+        GameSystem gameSystem = new GameSystem();
+        gameSystem.playGame();
 
 
     }
 
-
-
-
-
-
-
+}
