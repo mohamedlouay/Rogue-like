@@ -96,9 +96,10 @@ public class ConstructeurDuMonde {
 
     private void placeRooms() {
 
-
+        int nbTry = 0 ;
         int i = 0;
-        while (i < maxRooms) {
+        while (i < maxRooms && nbTry <1000) {
+            nbTry++;
             int w = minRoomSize + random.nextInt(maxRoomSize - minRoomSize + 1);
             int h = minRoomSize + random.nextInt(maxRoomSize - minRoomSize + 1);
             int x = random.nextInt(colonnes - w - 1) + 1;
@@ -128,6 +129,11 @@ public class ConstructeurDuMonde {
             }
 
 
+        }
+        if (nbTry >1000 ){
+            System.out.println("nombre de maxRoom tres grand !!!");
+            System.out.println("nombre de try : " + nbTry);
+            System.out.println("nombre de rooms generer :" + rooms.size());
         }
 
 

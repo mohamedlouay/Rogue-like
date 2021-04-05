@@ -15,7 +15,7 @@ public class World {
 
     private int colonnes;
     private int lignes;
-    private int maxRooms = 30;
+    private int maxRooms = 40;
     private int maxRoomSize = 15;
     private int minRoomSize = 10;
     ConstructeurDuMonde worldBuilder;
@@ -136,6 +136,86 @@ public class World {
     }
 
 
+    //move enemies
+
+    public void moveEnemies ( Player player)
+    {
+        char input ;
+        for (Enemy enemy:enemies) {
+            input = enemy.moveEnemy(player.getPositionX(), player.getPositionY()); // return a move
+
+            int enemyX = enemy.getPositionX() ;
+            int enemyY = enemy.getPositionY() ;
+
+            switch (input)
+            {
+                case 'Z' : {tryMoveEnemy(enemyX,enemyY-1,enemy,player);break;} //up
+                case 'Q' : {tryMoveEnemy(enemyX-1,enemyY,enemy,player);break;} //left
+                case 'D' : {tryMoveEnemy(enemyX+1,enemyY,enemy,player);break;} //right
+                case 'W' : {tryMoveEnemy(enemyX,enemyY+1,enemy,player);break;} //down
+
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+
+    private void tryMoveEnemy (int targetX ,int targetY,Enemy enemy,Player player)  {
+        Tile tile = getTile(targetX,targetY) ;
+        int oldX = enemy.getPositionX();
+        int oldY = enemy.getPositionY();
+        switch (tile)
+        {
+            case MUR :{
+                break;
+            }
+            case SOL: {
+
+                enemy.setPosition(targetX,targetY);
+                setTile(targetX,targetY,Tile.ZOMBIE);
+                setTile(oldX,oldY,Tile.SOL);
+                break;
+            }
+
+
+            case PLAYER: {
+
+                battleEnemey(player ,targetX,targetY ) ;// battle with the player
+                break;
+            }
+            default: {
+
+                battleEnemey(player ,targetX,targetY ) ;// battle with the player
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void battleEnemey(Player player , int targetX , int  targetY)
     {
@@ -152,11 +232,12 @@ public class World {
                 System.out.println("le player va attacker l'ennemie avec une force de  " + attackPower);
 
                 damageResult = enemey.takeDamage(attackPower);
-                if(damageResult != 0 ) // he die and we return his experience
+                if(damageResult != 0 ) // he died and we return his experience
                 {
                     player.addExperience(damageResult);
                     GameSystem.pause();
                     setTile(targetX,targetY,Tile.SOL);
+                    enemies.remove(enemey); //remove the died enemy from the list of enemies
                     return;
 
                 }

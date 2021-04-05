@@ -44,4 +44,31 @@ public class PlayScreen {
 
 
 
+    public void displayAll(Player player , World world) //function to display all world
+    {
+
+
+        for (int i = 0; i < world.getLignes() ; i++) {
+            for (int j = 0; j < world.getColonnes() ; j++) {
+                System.out.print(world.getTile(j,i).getSymbole());
+            }
+            System.out.println();
+
+        }
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("                            INFOS PLAYER                                  ");
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("LEVEL : " + player.getLevel());
+        System.out.println("EXPERIENCE : " + player.getExperience());
+        System.out.println("HEALTH : " + player.getHealth());
+        System.out.println("ATTACK : " + player.getAttack());
+        System.out.println("DEFENSE : " + player.getDefense());
+
+
+
+    }
+
+
+
+
 }

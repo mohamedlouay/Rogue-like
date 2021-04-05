@@ -1,11 +1,15 @@
 import creatures.Player;
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class GameSystem {
     Player player ;
     World world ;
     PlayScreen screen ;
+
+
+
     public int lignes =100;
     public int colonnes =400 ;
     Scanner scanner = new Scanner(System.in);
@@ -14,6 +18,7 @@ public class GameSystem {
     {   player = new Player();
         world =new World(player, lignes,colonnes);
         screen = new PlayScreen(50,20);
+
 
     }
 
@@ -24,9 +29,11 @@ public class GameSystem {
 
         while (gameOver == false)
         {
+            screen.display(player , world);
 
-            screen.display(player,world);
             userInput();
+            world.moveEnemies(player);
+
 
 
         }
@@ -39,6 +46,7 @@ public class GameSystem {
         System.out.println("Enter a move command (z/Q/D/W) :");
         input = scanner.next().toUpperCase().charAt(0);
         world.movePlayer(input, player);
+
     }
 
 
