@@ -1,5 +1,6 @@
 package generationProcedurale;
 
+import creatures.CreatureFactory;
 import creatures.Enemy;
 import creatures.Player;
 
@@ -25,7 +26,6 @@ public class ConstructeurDuMonde {
         this.maxRooms = maxRooms;
         this.maxRoomSize = maxRoomSize;
         this.minRoomSize = minRoomSize;
-
         tiles = create(lignes, colonnes);
         placeRooms();
         initPlayerPosition(player);
@@ -204,7 +204,8 @@ public class ConstructeurDuMonde {
             y = r.getY1() + random.nextInt(r.getY2() - r.getY1() );
 
             setTile(x,y,Tile.ZOMBIE);
-            enemies.add(new Enemy(x,y));
+            //enemies.add(new Enemy(x,y));
+            enemies.add((Enemy) CreatureFactory.createNewCreature(CreatureFactory.Entity.ZOMBIE,x,y));
 
 
         }
@@ -212,15 +213,6 @@ public class ConstructeurDuMonde {
     }
 
 
-    public void display() {
-        for (int i = 0; i < this.lignes; i++) {
-            for (int j = 0; j < this.colonnes; j++) {
-                System.out.print(this.tiles[i][j].getSymbole());
-            }
-            System.out.println();
-
-        }
-    }
 
 
 }
