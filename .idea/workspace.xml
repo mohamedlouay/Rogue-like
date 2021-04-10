@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="AI basic de l'enemy :&#10;l'Enemy suit le player si la distance entre eux est inférieure à une valeur prédéfinie">
-      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/CreatureFactory.java" afterDir="false" />
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="creation de la classe caractere">
+      <change afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Arme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Epee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Lance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classes/armes/dague.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +23,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,37 +44,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\si louay\Desktop\9raya\2021\semstre 6\projet terd\Rogue-like\src\main\java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\si louay\Desktop\9raya\2021\semstre 6\projet terd\Rogue-like\src\main\java\creatures" />
       <recent name="C:\Users\33671\IdeaProjects\Rogue-like\src\main\java" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="classes.generationProcedurale" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="creatures" />
       <recent name="classes.generationProcedurale" />
       <recent name="classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EnemyTest.moveEnemy">
-    <configuration name="Gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="ConstructeurDuMonde" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.ConstructeurDuMonde" />
       <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,11 +82,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.Test" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorldBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.WorldBuilder" />
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConstructeurDuMondeTest.placeRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generationProcedurale.*" />
+          <option name="PATTERN" value="classes.generationProcedurale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,45 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatureTest.takeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rogue-like" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="creatures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="creatures" />
-      <option name="MAIN_CLASS_NAME" value="creatures.CreatureTest" />
-      <option name="METHOD_NAME" value="takeDamage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EnemyTest.moveEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rogue-like" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="creatures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="creatures" />
-      <option name="MAIN_CLASS_NAME" value="creatures.EnemyTest" />
-      <option name="METHOD_NAME" value="moveEnemy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EnemyTest.moveEnemy" />
-        <item itemvalue="JUnit.CreatureTest.takeDamage" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Gui" />
         <item itemvalue="JUnit.ConstructeurDuMondeTest.placeRooms" />
+        <item itemvalue="Application.ConstructeurDuMonde" />
+        <item itemvalue="Application.WorldBuilder" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -349,35 +339,7 @@
       <option name="project" value="LOCAL" />
       <updated>1616749763539</updated>
     </task>
-    <task id="LOCAL-00029" summary="update">
-      <created>1617537414131</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1617537414132</updated>
-    </task>
-    <task id="LOCAL-00030" summary="AI basic de l'enemy :&#10;l'Enemy suit le player si la distance entre eux est inférieure à une valeur prédéfinie">
-      <created>1617658792435</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1617658792435</updated>
-    </task>
-    <task id="LOCAL-00031" summary="test classe Creature">
-      <created>1617915163277</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1617915163277</updated>
-    </task>
-    <task id="LOCAL-00032" summary="tests classe Enemy">
-      <created>1617917811223</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1617917811223</updated>
-    </task>
-    <option name="localTasksCounter" value="33" />
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,6 +355,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="add player" />
+    <MESSAGE value="add Player" />
     <MESSAGE value="update Player" />
     <MESSAGE value="add comments" />
     <MESSAGE value="update Player-add coins" />
@@ -406,6 +370,7 @@
     <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
+    <MESSAGE value="update" />
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
@@ -414,10 +379,6 @@
     <MESSAGE value="ajout de la Playscene" />
     <MESSAGE value="update de la classe main" />
     <MESSAGE value="creation de la classe GameSystem" />
-    <MESSAGE value="update" />
-    <MESSAGE value="AI basic de l'enemy :&#10;l'Enemy suit le player si la distance entre eux est inférieure à une valeur prédéfinie" />
-    <MESSAGE value="test classe Creature" />
-    <MESSAGE value="tests classe Enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests classe Enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation de la classe GameSystem" />
   </component>
 </project>

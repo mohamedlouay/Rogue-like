@@ -26,7 +26,6 @@ public class GameSystem {
     public void playGame()
     {
         boolean gameOver =false ;
-
         while (gameOver == false)
         {
             screen.display(player , world);
@@ -43,7 +42,7 @@ public class GameSystem {
 
     private void userInput() {
         char input ;
-        System.out.println("Enter a move command (z/Q/D/W) :");
+        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
         input = scanner.next().toUpperCase().charAt(0);
         world.movePlayer(input, player);
 

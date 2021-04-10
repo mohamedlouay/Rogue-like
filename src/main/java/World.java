@@ -87,6 +87,10 @@ public class World {
             case 'Q' : {tryMovePlayer(playerX-1,playerY,player);break;} //left
             case 'D' : {tryMovePlayer(playerX+1,playerY,player);break;} //right
             case 'W' : {tryMovePlayer(playerX,playerY+1,player);break;} //down
+            case 'A':
+                player.changerDArme(0);
+                break;
+
             default:
                 System.out.println("invalid input ! ");
                 try {

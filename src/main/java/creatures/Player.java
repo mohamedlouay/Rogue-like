@@ -1,15 +1,43 @@
 package creatures;
 
+import classes.armes.Arme;
+import classes.armes.Epee;
+import classes.armes.Lance;
+import classes.armes.dague;
+
+import java.util.ArrayList;
+
 public class Player extends Creature {
     private int level = 1;
 
+    ArrayList<Arme> armes = new ArrayList<>();
+    private int arme_courante = 0;
 
 
     public Player() {
         this.health = 100 ;
         this.experience=0;
         this.defense = 50;
+        //tester les armes :
+        armes.add(new dague());
+        armes.add(new Epee());
+        armes.add(new Lance());
+    }
 
+    public void changerDArme(int i){
+        if (this.arme_courante==(this.armes.size()-1)){
+            this.arme_courante=0;
+        }
+        else this.arme_courante++;
+    }
+
+
+
+    public void ajouterUneArme(Arme arm){
+        this.armes.add(arm);
+    }
+    public String getArmeNom(){
+        return this.armes.get(arme_courante).getNom();
     }
 
 
