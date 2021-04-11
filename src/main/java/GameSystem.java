@@ -10,8 +10,8 @@ public class GameSystem {
 
 
 
-    public int lignes =100;
-    public int colonnes =400 ;
+    public int lignes =50;
+    public int colonnes =150 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()

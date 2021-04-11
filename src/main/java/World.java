@@ -90,6 +90,9 @@ public class World {
             case 'A':
                 player.changerDArme(0);
                 break;
+            case 'X':
+                battleAdistance( player);
+                break;
 
             default:
                 System.out.println("invalid input ! ");
@@ -101,6 +104,28 @@ public class World {
 
 
         }
+    }
+    void battleAdistance(Player player){
+        for(Enemy e:enemies){
+            if(distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack()){
+                System.out.println("le player va attacker l'ennemie avec une force de  " + player.getAttack());
+                e.takeDamage(player.getAttack());
+
+               int damageResult = e.takeDamage(player.getAttack());
+                if(damageResult != 0 ) // he died and we return his experience
+                {
+                    player.addExperience(damageResult);
+                    GameSystem.pause();
+                    setTile(e.getPositionX(),e.getPositionY(),Tile.SOL);
+                    enemies.remove(e); //remove the died enemy from the list of enemies
+                    return;
+
+                }
+            }
+        }
+    }
+    double distance (int x1,int y1,int x2,int y2){
+        return  Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
     }
 
     private void tryMovePlayer (int targetX ,int targetY,Player player)  {

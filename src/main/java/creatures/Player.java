@@ -18,19 +18,28 @@ public class Player extends Creature {
         this.health = 100 ;
         this.experience=0;
         this.defense = 50;
+        this.attack=80;
+        this.attack=this.armes.size()==0?this.attack:this.armes.get(arme_courante).getPuissance();
         //tester les armes :
         armes.add(new dague());
         armes.add(new Epee());
         armes.add(new Lance());
     }
+    public Arme getArme(){
+        return this.armes.get(this.arme_courante);
+    }
 
     public void changerDArme(int i){
         if (this.arme_courante==(this.armes.size()-1)){
             this.arme_courante=0;
+            this.attack=this.armes.get(arme_courante).getPuissance();
         }
-        else this.arme_courante++;
-    }
+        else {
+            this.arme_courante++;
+            this.attack=this.armes.get(arme_courante).getPuissance();
 
+        }
+        }
 
 
     public void ajouterUneArme(Arme arm){
