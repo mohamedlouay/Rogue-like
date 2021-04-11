@@ -15,7 +15,8 @@ public class GameSystem {
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()
-    {   player = new Player();
+    {
+        player = new Player();
         world =new World(player, lignes,colonnes);
         screen = new PlayScreen(50,20);
 
@@ -25,9 +26,13 @@ public class GameSystem {
 
     public void playGame()
     {
+       screen.startScreen();
+       pause();
         boolean gameOver =false ;
+
         while (gameOver == false)
         {
+
             screen.display(player , world);
 
             userInput();

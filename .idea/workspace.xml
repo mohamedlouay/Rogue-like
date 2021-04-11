@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="correction.">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajout de l atteck a distance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/armes/Epee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Epee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/armes/Lance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Lance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/armes/dague.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/armes/dague.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618080075073</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ajout de l atteck a distance">
+      <created>1618168919131</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618168919131</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +370,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Player" />
     <MESSAGE value="update Player" />
     <MESSAGE value="add comments" />
     <MESSAGE value="update Player-add coins" />
@@ -393,6 +394,7 @@
     <MESSAGE value="creation de la classe GameSystem" />
     <MESSAGE value="ajoute des armes" />
     <MESSAGE value="correction." />
-    <option name="LAST_COMMIT_MESSAGE" value="correction." />
+    <MESSAGE value="ajout de l atteck a distance" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de l atteck a distance" />
   </component>
 </project>
