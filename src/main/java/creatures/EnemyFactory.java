@@ -1,16 +1,16 @@
 package creatures;
 
-public class CreatureFactory {
+public class EnemyFactory {
 
     public enum Entity {
-        PLAYER ,ZOMBIE
+        ZOMBIE,DRAGON ;
     }
 
 
-    public static Creature createNewCreature( Entity e , int x ,int y)
+    public static Enemy createNewEnemy( Entity e , int x ,int y)
     {
         switch (e){
-            case PLAYER : return new Player();
+
             case  ZOMBIE    : return new Enemy(x,y);
         }
         return null ;
