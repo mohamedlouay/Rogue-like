@@ -6,7 +6,7 @@ import java.util.Random;
 public class Creature {
 
     protected int health = 100;
-    protected int attack = 100;
+    protected int attack = 60;
     protected int defense = 20;
     protected int experience = 90;
     protected int positionX;
@@ -84,7 +84,7 @@ public class Creature {
     //methodes
 
     public int attack() {
-        return random.nextInt(this.attack);
+        return this.attack;
     }
 
     public int takeDamage(int damage) {

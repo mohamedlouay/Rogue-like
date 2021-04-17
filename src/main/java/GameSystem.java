@@ -1,37 +1,43 @@
-import creatures.CreatureFactory;
 import creatures.Player;
 
 import java.awt.*;
 import java.util.Scanner;
 
 public class GameSystem {
-    Player player;
-    World world;
-    PlayScreen screen;
+    Player player ;
+    World world ;
+    PlayScreen screen ;
 
 
-    public int lignes = 100;
-    public int colonnes = 400;
+
+    public int lignes =50;
+    public int colonnes =150 ;
     Scanner scanner = new Scanner(System.in);
 
-    public GameSystem() {
-
-        player = (Player) CreatureFactory.createNewCreature(CreatureFactory.Entity.PLAYER, 0, 0);
-        world = new World(player, lignes, colonnes);
-        screen = new PlayScreen(50, 20);
+    public GameSystem()
+    {
+        player = new Player();
+        world =new World(player, lignes,colonnes);
+        screen = new PlayScreen(50,20);
 
 
     }
 
 
-    public void playGame() {
-        boolean gameOver = false;
+    public void playGame()
+    {
+       screen.startScreen();
+       pause();
+        boolean gameOver =false ;
 
-        while (gameOver == false) {
-            screen.display(player, world);
+        while (gameOver == false)
+        {
+
+            screen.display(player , world);
 
             userInput();
             world.moveEnemies(player);
+
 
 
         }
@@ -40,15 +46,15 @@ public class GameSystem {
     }
 
     private void userInput() {
-        char input;
-        System.out.println("Enter a move command (z/Q/D/W) :");
+        char input ;
+        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
         input = scanner.next().toUpperCase().charAt(0);
         world.movePlayer(input, player);
 
     }
 
 
-    public static void pause() {
+    public static  void pause() {
         System.out.println("Press Any Key To Continue...");
         new Scanner(System.in).nextLine();
     }
