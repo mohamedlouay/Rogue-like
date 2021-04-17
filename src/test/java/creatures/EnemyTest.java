@@ -16,6 +16,7 @@ class EnemyTest {
     @Test
     void moveEnemy() {
 
+
         player.setPosition(10,7);//le player à droite de l'enemie et dans sa zone et x>y
         assertEquals('D',enemy.moveEnemy(player.getPositionX(),player.getPositionY()));
 
