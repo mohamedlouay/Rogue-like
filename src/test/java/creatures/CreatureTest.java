@@ -18,8 +18,10 @@ class CreatureTest {
 
     @Test
     public void takeDamage() {
-        int damage = random.nextInt(100);
-        assertTrue(enemy.takeDamage(damage)>=0);// n'est pas un nombre negatif
+        int previousHealth = enemy.getHealth();
 
+        assertEquals(0,enemy.takeDamage(50));// damage égale ou inférieure à la défense de l'ennemie
+        enemy.takeDamage(70);
+        assertTrue(previousHealth >= enemy.getHealth());// damage supérieure  à la défense de l'ennemie
     }
 }
