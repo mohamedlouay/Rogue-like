@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
-    </list>
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -484,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618780254469</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="enhancement">
+      <created>1618781025552</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1618781025552</updated>
+    </task>
+    <task id="LOCAL-00049" summary="enhancement">
+      <created>1618781044497</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1618781044497</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
     <MESSAGE value="ajouter la generation procedurale des salles" />
     <MESSAGE value="ajout de la classe Scene" />
@@ -525,6 +535,7 @@
     <MESSAGE value="Création de plusieurs types des ennemies" />
     <MESSAGE value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
     <MESSAGE value="Rogue-like.jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rogue-like.jar" />
+    <MESSAGE value="enhancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhancement" />
   </component>
 </project>
