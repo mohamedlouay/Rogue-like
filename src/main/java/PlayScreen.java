@@ -37,7 +37,7 @@ public class PlayScreen {
         System.out.println("HEALTH : " + player.getHealth());
         System.out.println("ATTACK : " + player.getAttack());
         System.out.println("DEFENSE : " + player.getDefense());
-        System.out.println("ARME : " + player.getArmeNom());
+        System.out.println("ARME : " + player.getArmeNom() + " ( X ) pour attaquer à distance");
 
 
 
