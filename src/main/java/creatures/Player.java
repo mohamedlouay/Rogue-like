@@ -17,8 +17,8 @@ public class Player extends Creature {
     public Player() {
         this.health = 100 ;
         this.experience=0;
-        this.defense = 50;
-        this.attack=80;
+        this.defense = 70;
+        this.attack=100;
         this.attack=this.armes.size()==0?this.attack:this.armes.get(arme_courante).getPuissance();
         //tester les armes :
         armes.add(new dague());

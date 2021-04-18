@@ -143,7 +143,7 @@ public class World {
     {
         char input ;
         for (Enemy enemy:enemies) {
-            input = enemy.moveEnemy(player.getPositionX(), player.getPositionY()); // return a move
+            input = enemy.moveEnemy(player); // return a move
 
             int enemyX = enemy.getPositionX() ;
             int enemyY = enemy.getPositionY() ;

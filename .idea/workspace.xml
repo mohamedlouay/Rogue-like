@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy">
-      <change afterPath="$PROJECT_DIR$/src/test/java/WorldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/generationProcedurale/CenterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/generationProcedurale/TileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/EnemyAi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -449,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618746420609</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Création de plusieurs types des ennemies">
+      <created>1618778096724</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1618778096724</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,7 +461,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
@@ -490,6 +485,7 @@
     <MESSAGE value="tester l" />
     <MESSAGE value="tester la classe ConstructeurDuMonde" />
     <MESSAGE value="tester la classe Room" />
-    <option name="LAST_COMMIT_MESSAGE" value="tester la classe Room" />
+    <MESSAGE value="Création de plusieurs types des ennemies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création de plusieurs types des ennemies" />
   </component>
 </project>

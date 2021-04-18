@@ -19,20 +19,20 @@ class EnemyTest {
 
 
         player.setPosition(10,7);//le player à droite de l'ennemie et dans sa zone et x>y
-        assertEquals('D',enemy.moveEnemy(player.getPositionX(),player.getPositionY()));
+        assertEquals('D',enemy.moveEnemy(player));
 
         player.setPosition(1,7);//le player à gauche de l'ennemie et dans sa zone et x<y
-        assertEquals('Q',enemy.moveEnemy(player.getPositionX(),player.getPositionY()));
+        assertEquals('Q',enemy.moveEnemy(player));
 
         player.setPosition(7,10);//le player au dessous de l'ennemie et dans sa zone et x<y
-        assertEquals('W',enemy.moveEnemy(player.getPositionX(),player.getPositionY()));
+        assertEquals('W',enemy.moveEnemy(player));
 
         player.setPosition(7,1);//le player au dessus de l'ennemie et dans sa zoneet x>y
-        assertEquals('Z',enemy.moveEnemy(player.getPositionX(),player.getPositionY()));
+        assertEquals('Z',enemy.moveEnemy(player));
 
 
         player.setPosition(random.nextInt(), random.nextInt());//le player n'est pas dans la zone de l'ennemie
-        assertTrue("ZQDW".indexOf(enemy.moveEnemy(player.getPositionX(),player.getPositionY()))!=-1);
+        assertTrue("ZQDW".indexOf(enemy.moveEnemy(player))!=-1);
 
     }
 }

@@ -18,14 +18,18 @@ public class Enemy extends Creature {
 
 
 
-    public char moveEnemy(int playerX, int playerY) {
-        int distanceX = this.positionX - playerX;
-        int distanceY = this.positionY - playerY;
+    public char moveEnemy(Player player) {
+        int distanceX = this.positionX - player.getPositionX();
+        int distanceY = this.positionY - player.getPositionY();
         int adx = Math.abs(distanceX);
         int ady = Math.abs(distanceY);
         int distance = adx + ady;
 
-        if (distance <= 10) {// the player is in the enemy zone
+
+        //the distance of detecting the player is proportional of his level
+
+
+        if (distance <= 10 + player.getLevel()) {// the player is in the enemy zone
             if (adx > ady) { //moving the enemy the X axis
                 if (distanceX > 0) { // move left
                     return 'Q';
