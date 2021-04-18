@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Rogue-like:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1owJLrVeWTHqNoFgvOSpwmFIvi6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,7 +54,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
@@ -445,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618778096724</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="the distance of detecting that the player is in the zone of the enemy is proportional of his level">
+      <created>1618778951389</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1618778951389</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +479,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
@@ -486,6 +503,7 @@
     <MESSAGE value="tester la classe ConstructeurDuMonde" />
     <MESSAGE value="tester la classe Room" />
     <MESSAGE value="Création de plusieurs types des ennemies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création de plusieurs types des ennemies" />
+    <MESSAGE value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
+    <option name="LAST_COMMIT_MESSAGE" value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
   </component>
 </project>
