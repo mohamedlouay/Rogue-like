@@ -10,7 +10,8 @@ class EnemyTest {
     Random random = new Random();
 
     Player player = new Player();
-    Enemy enemy = new Enemy(5,5);
+    Enemy enemy =EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,5,5);
+
 
 
     @Test

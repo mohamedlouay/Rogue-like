@@ -3,7 +3,14 @@ package generationProcedurale;
 public enum Tile {
 
 
-    SOL('.') ,MUR(' '),EDGE('#') ,PLAYER('@') ,ZOMBIE('Z');
+    SOL('.') ,
+    MUR(' '),
+    EDGE('#') ,
+    PLAYER('@') ,
+    ZOMBIE('Z'),
+    SNAKE('S'),
+    DRAGON('D'),
+    WOLF('W');
 
     private char symbole ;
 

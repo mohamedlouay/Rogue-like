@@ -1,7 +1,8 @@
 package generationProcedurale;
 
-import creatures.CreatureFactory;
+
 import creatures.Enemy;
+import creatures.EnemyFactory;
 import creatures.Player;
 
 import java.util.ArrayList;
@@ -94,7 +95,7 @@ public class ConstructeurDuMonde {
     }
 
 
-    private void placeRooms() {
+    public void placeRooms() {
 
         int nbTry = 0 ;
         int i = 0;
@@ -198,14 +199,41 @@ public class ConstructeurDuMonde {
     {
         int x ;
         int y ;
+        int proba ;
         for (Room r :rooms)
         {
             x = r.getX1() + random.nextInt(r.getX2() - r.getX1() );
             y = r.getY1() + random.nextInt(r.getY2() - r.getY1() );
 
-            setTile(x,y,Tile.ZOMBIE);
-            //enemies.add(new Enemy(x,y));
-            enemies.add((Enemy) CreatureFactory.createNewCreature(CreatureFactory.Entity.ZOMBIE,x,y));
+            proba = random.nextInt(10)+1;
+
+            switch (proba){
+                case 1: case 2 : case 3 : case 4 : //probabilty of 40% that enemy is a zombie
+                    setTile(x,y,Tile.ZOMBIE);
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,x,y));
+                    break;
+                case 5 : case 6 : case 7 ://probabilty of 30% that enemy is a snake
+                    setTile(x,y,Tile.SNAKE);
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.SNAKE,x,y));
+                    break;
+
+                case 8 : case 9://probabilty of 20% that enemy is a wolf
+                    setTile(x,y,Tile.WOLF);
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.WOLF,x,y));
+                    break;
+
+                case 10 ://probabilty of 10 % that enemy is a dragon
+                    setTile(x,y,Tile.DRAGON);
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,x,y));
+                    break;
+
+                default:
+                    throw new IllegalStateException("Unexpected value: " + proba);
+            }
+
+
+
+
 
 
         }

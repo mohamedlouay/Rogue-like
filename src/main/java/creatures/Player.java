@@ -69,10 +69,10 @@ public class Player extends Creature {
 
     // methodes
 
-    public  void addExperience (int ex)
+    public  void addExperience (int ex)//add experience to player when he kill an enemy
     {
         this.experience += ex ;
-        while (this.experience > 100)
+        while (this.experience > 100)//increase his force whenever he get 100 experience
         {
             this.experience -= 100 ;
             this.attack += 50 ;

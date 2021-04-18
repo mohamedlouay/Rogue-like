@@ -63,17 +63,8 @@ public class World {
         return lignes;
     }
 
-    public void display2() {
-        for (int i = 0; i < this.lignes; i++) {
-            for (int j = 0; j < this.colonnes; j++) {
-                System.out.print(this.tiles[i][j].getSymbole());
-            }
-            System.out.println();
 
-        }
-    }
-
-
+    // functions
 
     public void movePlayer ( char input , Player player) {
         int playerX = player.getPositionX();
@@ -105,28 +96,9 @@ public class World {
 
         }
     }
-    void battleAdistance(Player player){
-        for(Enemy e:enemies){
-            if(distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack()){
-                System.out.println("le player va attacker l'ennemie avec une force de  " + player.getAttack());
-                e.takeDamage(player.getAttack());
 
-               int damageResult = e.takeDamage(player.getAttack());
-                if(damageResult != 0 ) // he died and we return his experience
-                {
-                    player.addExperience(damageResult);
-                    GameSystem.pause();
-                    setTile(e.getPositionX(),e.getPositionY(),Tile.SOL);
-                    enemies.remove(e); //remove the died enemy from the list of enemies
-                    return;
 
-                }
-            }
-        }
-    }
-    double distance (int x1,int y1,int x2,int y2){
-        return  Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
-    }
+
 
     private void tryMovePlayer (int targetX ,int targetY,Player player)  {
         Tile tile = getTile(targetX,targetY) ;
@@ -207,7 +179,7 @@ public class World {
             case SOL: {
 
                 enemy.setPosition(targetX,targetY);
-                setTile(targetX,targetY,Tile.ZOMBIE);
+                setTile(targetX,targetY,enemy.tile);
                 setTile(oldX,oldY,Tile.SOL);
                 break;
             }
@@ -296,6 +268,31 @@ public class World {
         }
 
 
+    }
+
+
+
+    void battleAdistance(Player player){
+        for(Enemy e:enemies){
+            if(distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack()){
+                System.out.println("le player va attacker l'ennemie avec une force de  " + player.getAttack());
+                e.takeDamage(player.getAttack());
+
+                int damageResult = e.takeDamage(player.getAttack());
+                if(damageResult != 0 ) // he died and we return his experience
+                {
+                    player.addExperience(damageResult);
+                    GameSystem.pause();
+                    setTile(e.getPositionX(),e.getPositionY(),Tile.SOL);
+                    enemies.remove(e); //remove the died enemy from the list of enemies
+                    return;
+
+                }
+            }
+        }
+    }
+    int distance (int x1,int y1,int x2,int y2){
+        return  (int) Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
     }
 
 

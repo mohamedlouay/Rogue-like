@@ -1,10 +1,21 @@
 package creatures;
 
-public class Enemy extends Creature {
-    public Enemy(int PositionX, int PositionY) {
+import generationProcedurale.Tile;
 
-        setPosition(PositionX, PositionY);
+public class Enemy extends Creature {
+
+    public Tile tile ;
+
+
+    public Enemy(Tile tile ,int health, int attack, int defense, int experience, int positionX, int positionY) {
+
+      super(health,attack,defense,experience, positionX, positionY);
+      this.tile = tile ;
     }
+
+
+
+
 
 
     public char moveEnemy(int playerX, int playerY) {

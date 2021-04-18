@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CreatureTest {
     Random random = new Random();
-    Enemy enemy =new Enemy(5,5);
+    Enemy enemy =EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,5,5 );
    int attack = enemy.attack();
 
 

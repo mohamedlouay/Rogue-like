@@ -17,8 +17,17 @@ public class Creature {
 
     }
 
+    public Creature(int health, int attack, int defense, int experience, int positionX, int positionY) {
+        this.health = health;
+        this.attack = attack;
+        this.defense = defense;
+        this.experience = experience;
+        this.positionX = positionX;
+        this.positionY = positionY;
+    }
 
-    //Setters
+
+//Setters
 
 
     public void setHealth(int health) {
