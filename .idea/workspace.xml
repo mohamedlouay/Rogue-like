@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +463,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618778951389</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Rogue-like.jar">
+      <created>1618780004556</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1618780004556</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Rogue-like.jar">
+      <created>1618780171926</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1618780171926</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Rogue-like.jar">
+      <created>1618780254469</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1618780254469</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +500,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
     <MESSAGE value="ajouter la generation procedurale des salles" />
@@ -504,6 +524,7 @@
     <MESSAGE value="tester la classe Room" />
     <MESSAGE value="Création de plusieurs types des ennemies" />
     <MESSAGE value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
-    <option name="LAST_COMMIT_MESSAGE" value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
+    <MESSAGE value="Rogue-like.jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rogue-like.jar" />
   </component>
 </project>
