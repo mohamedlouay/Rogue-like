@@ -12,10 +12,10 @@ class EnemyFactoryTest {
     @Test
     void createNewEnemy() {
 
-        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,1,1);
+        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,1,1,1);
         assertTrue(entity instanceof Enemy);
 
-        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,1,1);
+        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,1,1,1);
         assertTrue(entity instanceof Enemy);
 
     }

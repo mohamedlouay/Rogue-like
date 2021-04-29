@@ -15,30 +15,20 @@ public class World {
 
     private int colonnes;
     private int lignes;
-    private int maxRooms = 40;
-    private int maxRoomSize = 15;
-    private int minRoomSize = 10;
+
     ConstructeurDuMonde worldBuilder;
 
     public World(Player player, int  lignes, int colonnes) {
 
         this.colonnes = colonnes;
         this.lignes = lignes;
-        worldBuilder = new ConstructeurDuMonde(player,lignes, colonnes, this.maxRooms ,this.minRoomSize, this.maxRoomSize);
+        worldBuilder = new ConstructeurDuMonde(player,lignes, colonnes);
         this.tiles = worldBuilder.getTiles();
         this.rooms = worldBuilder.getRooms();
         this.enemies= worldBuilder.getenemies();
 
     }
 
-    public World(Player player ,int lignes, int colonnes, int minRoomSize, int maxRoomSize, int maxRooms) {
-
-        this.colonnes = colonnes;
-        this.lignes = lignes;
-        worldBuilder = new ConstructeurDuMonde(player,lignes, colonnes, minRoomSize, maxRoomSize, maxRooms);
-
-        this.tiles = worldBuilder.getTiles();
-    }
 
     //setters
 
@@ -120,11 +110,21 @@ public class World {
             }
 
 
-            case ZOMBIE: {
+            case ZOMBIE:
+            case WOLF:
+            case SNAKE:
+            case DRAGON:{
 
                 battleEnemey(player ,targetX,targetY ) ;// battle with the enemy
                 break;
             }
+
+
+            case WINDOW:
+                moveToNextLevel(player);
+                break;
+
+
             default: {
 
                 battleEnemey(player ,targetX,targetY ) ;// battle with the enemy
@@ -135,6 +135,7 @@ public class World {
 
 
     }
+
 
 
     //move enemies
@@ -239,7 +240,7 @@ public class World {
                     GameSystem.pause();
                     setTile(targetX,targetY,Tile.SOL);
                     enemies.remove(enemey); //remove the died enemy from the list of enemies
-                    return;
+                    break;
 
                 }
 
@@ -262,7 +263,7 @@ public class World {
 
 
 
-                return ;
+                break ;
             }
 
         }
@@ -296,8 +297,70 @@ public class World {
     }
 
 
+    public void update(Player player) {
+
+        // check if all the enemies are died so create a windows to the next level
+        if (enemies.size()==0 )
+        {
+            createWindow(player);
+        }
+    }
 
 
+
+
+    void createWindow( Player player)
+    {
+        // find in wich room the player is ?
+        int x = player.getPositionX();
+        int y = player.getPositionY();
+
+        for ( Room room : rooms)
+        {
+            if ((room.getX1() <=x )&& (room.getX2() >=x ) && (room.getY1() <= y) && (room.getY2()>= y))
+            {
+                // create a window in the center of this room
+                createWindowCenter(room.getCenter().getCenterX(),room.getCenter().getCenterY());
+                setTile(x,y,Tile.PLAYER);//repaint the @ in the case he was in the middle and
+                                         // have been overrided by the windows symbol
+                break;
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+    private void createWindowCenter(int centerX, int centerY) {
+
+
+        //create a window of 2 * 2 Tiles
+        setTile(centerX,centerY,Tile.WINDOW);
+        setTile(centerX,centerY+1,Tile.WINDOW);
+        setTile(centerX+1,centerY,Tile.WINDOW);
+        setTile(centerX+1,centerY+1,Tile.WINDOW);
+
+
+
+    }
+
+    private void moveToNextLevel(Player player) {
+
+
+        // generate new world
+        worldBuilder = new ConstructeurDuMonde(player,lignes, colonnes);
+        this.tiles = worldBuilder.getTiles();
+        this.rooms = worldBuilder.getRooms();
+        this.enemies= worldBuilder.getenemies();
+
+        player.setLevel(player.getLevel()+1);
+
+
+    }
 
 
 }

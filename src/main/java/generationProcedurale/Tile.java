@@ -5,6 +5,7 @@ public enum Tile {
 
     SOL('.') ,
     MUR(' '),
+    WINDOW('<'),
     EDGE('#') ,
     PLAYER('@') ,
     ZOMBIE('Z'),

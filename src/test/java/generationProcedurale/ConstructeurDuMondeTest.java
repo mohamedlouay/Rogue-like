@@ -11,7 +11,7 @@ class ConstructeurDuMondeTest {
 
     ArrayList<Room> rooms = new ArrayList<Room>();
     Player player = new Player();
-    ConstructeurDuMonde world = new ConstructeurDuMonde(player,100,300,4,10,15);
+    ConstructeurDuMonde world = new ConstructeurDuMonde(player,100,300);
 
 
     @Test

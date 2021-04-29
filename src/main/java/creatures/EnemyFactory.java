@@ -9,14 +9,17 @@ public class EnemyFactory {
     }
 
 
-    public static Enemy createNewEnemy( Entity e , int x ,int y)
+    public static Enemy createNewEnemy( Entity e ,int level, int x ,int y)
     {
+
+        int evolution = level * 10;
+
         switch (e){
 
-            case  ZOMBIE    : return new Enemy(Tile.ZOMBIE,100,50,20,60,x,y);
-            case  SNAKE    : return new Enemy(Tile.SNAKE,120,70,60,80,x,y);
-            case  WOLF    : return new Enemy(Tile.WOLF,150,90,100,100,x,y);
-            case  DRAGON    : return new Enemy(Tile.DRAGON,200,150,300,200,x,y);
+            case  ZOMBIE    : return new Enemy(Tile.ZOMBIE,100,30+evolution,20+evolution,60,x,y);
+            case  SNAKE    : return new Enemy(Tile.SNAKE,100,50+evolution,40+evolution,80,x,y);
+            case  WOLF    : return new Enemy(Tile.WOLF,100,70+evolution,60+evolution,100,x,y);
+            case  DRAGON    : return new Enemy(Tile.DRAGON,100,100+evolution,80+evolution,200,x,y);
 
         }
         return null ;

@@ -78,7 +78,6 @@ public class Player extends Creature {
             this.attack += 50 ;
             this.defense += 20 ;
             this.health += 50 ;
-            this.level ++ ;
             System.out.println("ennemi mort !!!");
             System.out.println("Bravo , vous avez atteint le niveau "+  this.level);
             System.out.println(" votre nouveau points d' attaque est  "+  this.attack);

@@ -13,15 +13,15 @@ public class ConstructeurDuMonde {
     Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms;
-    private int maxRoomSize;
-    private int minRoomSize;
+    private int maxRooms = 5;
+    private int maxRoomSize = 10;
+    private int minRoomSize = 5;
     Random random = new Random();
     ArrayList<Room> rooms = new ArrayList<Room>();
     ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 
 
-    public ConstructeurDuMonde(Player player,int lignes, int colonnes, int maxRooms, int minRoomSize, int maxRoomSize) {
+    public ConstructeurDuMonde(Player player,int lignes, int colonnes) {
         this.lignes = lignes;
         this.colonnes = colonnes;
         this.maxRooms = maxRooms;
@@ -30,7 +30,7 @@ public class ConstructeurDuMonde {
         tiles = create(lignes, colonnes);
         placeRooms();
         initPlayerPosition(player);
-        initEnemiesPosition();
+        initEnemiesPosition(player);
 
     }
 
@@ -101,7 +101,7 @@ public class ConstructeurDuMonde {
         int i = 0;
         while (i < maxRooms && nbTry <1000) {
             nbTry++;
-            int w = minRoomSize + random.nextInt(maxRoomSize - minRoomSize + 1);
+            int w = minRoomSize + random.nextInt(maxRoomSize - minRoomSize + 1)+10;
             int h = minRoomSize + random.nextInt(maxRoomSize - minRoomSize + 1);
             int x = random.nextInt(colonnes - w - 1) + 1;
             int y = random.nextInt(lignes - h - 1 - 10) + 1;
@@ -195,11 +195,12 @@ public class ConstructeurDuMonde {
     }
 
     //Create a room.size number of enemies and fill the array of enemies
-    public void initEnemiesPosition()
+    public void initEnemiesPosition(Player player)
     {
         int x ;
         int y ;
         int proba ;
+        int level = player.getLevel();
         for (Room r :rooms)
         {
             x = r.getX1() + random.nextInt(r.getX2() - r.getX1() );
@@ -210,21 +211,21 @@ public class ConstructeurDuMonde {
             switch (proba){
                 case 1: case 2 : case 3 : case 4 : //probabilty of 40% that enemy is a zombie
                     setTile(x,y,Tile.ZOMBIE);
-                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,x,y));
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,level,x,y));
                     break;
                 case 5 : case 6 : case 7 ://probabilty of 30% that enemy is a snake
                     setTile(x,y,Tile.SNAKE);
-                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.SNAKE,x,y));
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.SNAKE,level,x,y));
                     break;
 
                 case 8 : case 9://probabilty of 20% that enemy is a wolf
                     setTile(x,y,Tile.WOLF);
-                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.WOLF,x,y));
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.WOLF,level,x,y));
                     break;
 
                 case 10 ://probabilty of 10 % that enemy is a dragon
                     setTile(x,y,Tile.DRAGON);
-                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,x,y));
+                    enemies.add( EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,level,x,y));
                     break;
 
                 default:
