@@ -50,7 +50,7 @@ public class GameSystem {
 
     private void userInput() {
         char input ;
-        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
+        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme , (I) pour vesiter l inventaire ,(X) pour une attack a distance  :");
         input = scanner.next().toUpperCase().charAt(0);
 
         world.movePlayer(input, player);

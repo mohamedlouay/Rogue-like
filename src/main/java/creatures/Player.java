@@ -30,6 +30,9 @@ public class Player extends Creature {
     public Arme getArme(){
         return this.armes.get(this.arme_courante);
     }
+    public ArrayList<Arme> getArmes(){
+        return this.armes;
+    }
 
     public void changerDArme(int i){
         if (this.arme_courante==(this.armes.size()-1)){

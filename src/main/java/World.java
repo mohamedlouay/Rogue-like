@@ -17,7 +17,7 @@ public class World {
     ArrayList<Room> rooms;
     ArrayList<Enemy> enemies = new ArrayList<Enemy>();
     ArrayList<Item> items = new ArrayList<Item>();
-
+    Player player;
     private int colonnes;
     private int lignes;
 
@@ -25,7 +25,7 @@ public class World {
     PlayerInventory playerInventory;
 
     public World(Player player, int  lignes, int colonnes) {
-
+        this.player=player;
         this.colonnes = colonnes;
         this.lignes = lignes;
         playerInventory = new PlayerInventory();
@@ -82,10 +82,6 @@ public class World {
             case 'X':
                 battleAdistance( player);
                 break;
-            case 'M':
-                 System.out.println("marché");
-                goToShop();
-                break;
 
             case 'I':
                 PlayScreen.DisplayInvetory(playerInventory,player);
@@ -101,22 +97,6 @@ public class World {
 
 
         }
-    }
-
-    private void goToShop() {
-        System.out.println();
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println("                                 SHOP                                     ");
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println("1-(X1) Lance LVL1  10$                            4-(X3) Lance LVL1   25$   ");
-        System.out.println("2-Dague LVL2       50$                            5-Dague LVL3        100$  ");
-        System.out.println("3-EPEE LVL2       100$                            6-EPEE LVL3         200$  ");
-        System.out.println("entrer le numero de l article que vous voulez achter...  ");
-    new Scanner(System.in).nextLine();
-
-
-
-
     }
 
 

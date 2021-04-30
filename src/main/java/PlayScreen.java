@@ -1,3 +1,4 @@
+import classes.armes.Lance;
 import creatures.Player;
 import creatures.PlayerInventory;
 
@@ -65,7 +66,7 @@ public class PlayScreen {
                 " |ATTACK : " + player.getAttack() +
                 " |DEFENSE : " + player.getDefense() +
                 " |EXPERIENCE : " + player.getExperience() +
-                " |ARME : " + player.getArmeNom() + " ( X ) pour attaquer à distance");
+                " |ARME : " + player.getArmeNom() );
 
 
     }
@@ -85,6 +86,7 @@ public class PlayScreen {
 
         switch (choix)
         { case 1 :
+            buyarmes(playerInventory, player);
             break;
             case 2 :
                 buyFood(playerInventory, player);
@@ -127,6 +129,91 @@ public class PlayScreen {
            case 4 :
                 soldeVerification(playerInventory,player,200);
                 break;
+            default:
+                System.out.println("invalid input!!");
+                GameSystem.pause();
+                break;
+
+
+        }
+
+
+
+
+
+    }
+
+
+    private static void buyarmes(PlayerInventory playerInventory , Player player) {
+
+        espaces(50);
+
+        System.out.println("choisissez une option : ");
+        System.out.println("1-(X1) Lance LVL1  10$                            4-(X3) Lance LVL1   25$   ");
+        System.out.println("2-Dague LVL2       50$                            5-Dague LVL3        100$  ");
+        System.out.println("3-EPEE LVL2       100$                            6-EPEE LVL3         200$  ");
+        int choix = new Scanner(System.in).nextInt();
+        System.out.println();
+
+        switch (choix)
+        {
+            case 1 :
+                if (playerInventory.getMoney()>=10){
+                    if (player.getArmes().get(2) instanceof Lance){
+                        ((Lance) player.getArmes().get(2)).add_lance(1);
+                        playerInventory.addMoney(-10);
+                    }
+                }else {
+                    System.out.println("solde insuffisant !");
+                }
+                break;
+
+            case 2 :
+                if (playerInventory.getMoney()>=50){
+                    player.getArmes().get(0).setLevel(2);
+                    playerInventory.addMoney(-50);
+                    System.out.println("Dague Level 2");
+
+
+                }else {
+                    System.out.println("solde insuffisant !");
+                }                break;
+            case 3 :
+                if (playerInventory.getMoney()>=100){
+                    player.getArmes().get(1).setLevel(2);
+                    playerInventory.addMoney(-100);
+
+                }else {
+                    System.out.println("solde insuffisant !");
+                }                break;
+            case 4 :
+                if (playerInventory.getMoney()>=25){
+                    if (player.getArmes().get(2) instanceof Lance){
+                        ((Lance) player.getArmes().get(2)).add_lance(3);
+                        playerInventory.addMoney(-25);
+                    }
+                }else {
+                    System.out.println("solde insuffisant !");
+                }
+                break;
+            case 5 :
+                if (playerInventory.getMoney()>=100){
+                    player.getArmes().get(0).setLevel(3);
+                    playerInventory.addMoney(-100);
+
+                }else {
+                    System.out.println("solde insuffisant !");
+                }                break;
+                case 6 :
+                    if (playerInventory.getMoney()>=200){
+                        player.getArmes().get(1).setLevel(3);
+                        playerInventory.addMoney(-200);
+                        System.out.println("EPEE Level 3");
+
+
+                    }else {
+                        System.out.println("solde insuffisant !");
+                    }                break;
             default:
                 System.out.println("invalid input!!");
                 GameSystem.pause();
