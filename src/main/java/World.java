@@ -1,5 +1,6 @@
 
 
+import classes.armes.Lance;
 import creatures.Enemy;
 import creatures.Player;
 import generationProcedurale.ConstructeurDuMonde;
@@ -275,7 +276,10 @@ public class World {
 
     void battleAdistance(Player player){
         for(Enemy e:enemies){
-            if(distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack()){
+            if((distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack())&&(player.getArme().getNombre()>0)){
+                if(player.getArme() instanceof Lance){
+                    ((Lance) player.getArme()).sous_lance();
+                }
                 System.out.println("le player va attacker l'ennemie avec une force de  " + player.getAttack());
                 e.takeDamage(player.getAttack());
 
