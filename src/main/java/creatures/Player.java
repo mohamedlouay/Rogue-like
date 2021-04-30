@@ -9,12 +9,14 @@ import java.util.ArrayList;
 
 public class Player extends Creature {
     private int level = 1;
+    private int argent=0;
 
     ArrayList<Arme> armes = new ArrayList<>();
     private int arme_courante = 0;
 
 
     public Player() {
+        this.argent=10;
         this.health = 100 ;
         this.experience=0;
         this.defense = 70;
@@ -61,6 +63,9 @@ public class Player extends Creature {
     public void setLevel(int level) {
         this.level = level;
     }
+    public void  sous_argent(int a){
+        this.argent-=a;
+    }
 
 
 
@@ -80,13 +85,9 @@ public class Player extends Creature {
         while (this.experience > 100)//increase his force whenever he get 100 experience
         {
             this.experience -= 100 ;
-            this.attack += 50 ;
-            this.defense += 20 ;
-            this.health += 50 ;
+            this.argent+=50;
             System.out.println("ennemi mort !!!");
-            System.out.println(" votre nouveau attaque est  "+  this.attack);
-            System.out.println(" votre nouveau defense est  "+  this.defense);
-            System.out.println(" votre nouveau sante est  "+  this.health);
+            System.out.println(" + 50 $  ");
 
         }
 
