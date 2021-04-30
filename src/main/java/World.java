@@ -1,5 +1,6 @@
 
 
+import classes.armes.Lance;
 import creatures.Enemy;
 import creatures.Player;
 import creatures.PlayerInventory;
@@ -270,12 +271,15 @@ public class World {
                 damageResult = player.takeDamage(attackPower);
                 if(damageResult != 0)
                 {
+                    //aaj
                     System.out.println("le player est mort!!!");
                     setTile(player.getPositionX(), player.getPositionY(), Tile.SOL);
                     GameSystem.pause();
                     System.exit(0);
 
                 }
+
+
 
 
 
@@ -292,7 +296,10 @@ public class World {
 
     void battleAdistance(Player player){
         for(Enemy e:enemies){
-            if(distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack()){
+            if((distance(player.getPositionX(),player.getPositionY(),e.getPositionX(),e.getPositionY())<=player.getArme().getDistanceDAttack())&&(player.getArme().getNombre()>0)){
+                if(player.getArme() instanceof Lance){
+                    ((Lance) player.getArme()).sous_lance();
+                }
                 System.out.println("le player va attacker l'ennemie avec une force de  " + player.getAttack());
                 e.takeDamage(player.getAttack());
 

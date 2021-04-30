@@ -32,7 +32,12 @@ public class Player extends Creature {
     public void changerDArme(int i){
         if (this.arme_courante==(this.armes.size()-1)){
             this.arme_courante=0;
-            this.attack=this.armes.get(arme_courante).getPuissance();
+            if(this.armes.get(arme_courante).getNombre()!=0) {
+                this.attack = this.armes.get(arme_courante).getPuissance();
+            }
+            else{
+                this.attack=0;
+            }
         }
         else {
             this.arme_courante++;
