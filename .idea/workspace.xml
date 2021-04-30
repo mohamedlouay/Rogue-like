@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Rogue-like:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajout du marché">
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajout nuy armes">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/armes/Arme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/armes/Arme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/PlayerInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/PlayerInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -401,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619757739855</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="ajout nuy armes">
+      <created>1619761375952</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1619761375952</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,7 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ajouter des commentaires 1" />
     <MESSAGE value="ajouter la classe Player" />
     <MESSAGE value="ajouter deplacement joueur" />
     <MESSAGE value="ajouter la classe Box" />
@@ -442,6 +450,7 @@
     <MESSAGE value="ajout des commentaires" />
     <MESSAGE value="ajout de l argent au joueur" />
     <MESSAGE value="ajout du marché" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout du marché" />
+    <MESSAGE value="ajout nuy armes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout nuy armes" />
   </component>
 </project>
