@@ -8,6 +8,7 @@ import generationProcedurale.Room;
 import generationProcedurale.Tile;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class World {
     private Tile[][] tiles;
@@ -75,6 +76,10 @@ public class World {
             case 'X':
                 battleAdistance( player);
                 break;
+            case 'M':
+                 System.out.println("marché");
+                goToShop();
+                break;
 
             default:
                 System.out.println("invalid input ! ");
@@ -88,7 +93,21 @@ public class World {
         }
     }
 
+    private void goToShop() {
+        System.out.println();
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("                                 SHOP                                     ");
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("1-(X1) Lance LVL1  10$                            4-(X3) Lance LVL1   25$   ");
+        System.out.println("2-Dague LVL2       50$                            5-Dague LVL3        100$  ");
+        System.out.println("3-EPEE LVL2       100$                            6-EPEE LVL3         200$  ");
+        System.out.println("entrer le numero de l article que vous voulez achter...  ");
+    new Scanner(System.in).nextLine();
 
+
+
+
+    }
 
 
     private void tryMovePlayer (int targetX ,int targetY,Player player)  {

@@ -50,6 +50,7 @@ public class GameSystem {
         char input ;
         System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
         input = scanner.next().toUpperCase().charAt(0);
+
         world.movePlayer(input, player);
 
     }

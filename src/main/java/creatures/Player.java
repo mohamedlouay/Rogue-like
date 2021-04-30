@@ -58,7 +58,7 @@ public class Player extends Creature {
 
 
     //Setters
-
+//
 
     public void setLevel(int level) {
         this.level = level;
