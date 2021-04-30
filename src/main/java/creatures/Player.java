@@ -79,10 +79,9 @@ public class Player extends Creature {
             this.defense += 20 ;
             this.health += 50 ;
             System.out.println("ennemi mort !!!");
-            System.out.println("Bravo , vous avez atteint le niveau "+  this.level);
-            System.out.println(" votre nouveau points d' attaque est  "+  this.attack);
-            System.out.println(" votre nouveau points de defense est  "+  this.defense);
-            System.out.println(" votre nouveau points de sante est  "+  this.health);
+            System.out.println(" votre nouveau attaque est  "+  this.attack);
+            System.out.println(" votre nouveau defense est  "+  this.defense);
+            System.out.println(" votre nouveau sante est  "+  this.health);
 
         }
 

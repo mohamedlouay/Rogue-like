@@ -231,7 +231,7 @@ public class World {
                 //player turn
 
                 attackPower = player.attack();
-                System.out.println("le player va attacker l'ennemie avec une force de  " + attackPower);
+                System.out.println("le player va attacker le "+ enemey.tile +" avec une force de  " + attackPower);
 
                 damageResult = enemey.takeDamage(attackPower);
                 if(damageResult != 0 ) // he died and we return his experience
@@ -247,7 +247,7 @@ public class World {
                 //the enemey is still alive
                 //his turn to attack
                 attackPower= enemey.attack();
-                System.out.println("le ennemie va attacker le player avec une force de  " + attackPower);
+                System.out.println("le "+ enemey.tile +" va attacker le player avec une force de  " + attackPower);
                 GameSystem.pause();
 
                 damageResult = player.takeDamage(attackPower);

@@ -11,14 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="tester la classe Enemy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/generationProcedurale/ConstructeurDuMondeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/generationProcedurale/ConstructeurDuMondeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614191667778</updated>
-    </task>
-    <task id="LOCAL-00003" summary="update Player">
-      <created>1615113074400</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1615113074400</updated>
     </task>
     <task id="LOCAL-00004" summary="update Player-add coins">
       <created>1615113169742</created>
@@ -505,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618781158668</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="générer plusieurs Levels">
+      <created>1619738545224</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1619738545225</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +517,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
     <MESSAGE value="ajouter la generation procedurale des salles" />
     <MESSAGE value="ajout de la classe Scene" />
     <MESSAGE value="ajout de la Playscene" />
@@ -546,6 +541,7 @@
     <MESSAGE value="the distance of detecting that the player is in the zone of the enemy is proportional of his level" />
     <MESSAGE value="enhancement" />
     <MESSAGE value="Rogue-like.jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rogue-like.jar" />
+    <MESSAGE value="générer plusieurs Levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="générer plusieurs Levels" />
   </component>
 </project>
