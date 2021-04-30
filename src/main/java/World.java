@@ -2,9 +2,11 @@
 
 import creatures.Enemy;
 import creatures.Player;
+import creatures.PlayerInventory;
 import generationProcedurale.ConstructeurDuMonde;
 import generationProcedurale.Room;
 import generationProcedurale.Tile;
+import items.Item;
 
 import java.util.ArrayList;
 
@@ -12,20 +14,24 @@ public class World {
     private Tile[][] tiles;
     ArrayList<Room> rooms;
     ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+    ArrayList<Item> items = new ArrayList<Item>();
 
     private int colonnes;
     private int lignes;
 
     ConstructeurDuMonde worldBuilder;
+    PlayerInventory playerInventory;
 
     public World(Player player, int  lignes, int colonnes) {
 
         this.colonnes = colonnes;
         this.lignes = lignes;
+        playerInventory = new PlayerInventory();
         worldBuilder = new ConstructeurDuMonde(player,lignes, colonnes);
         this.tiles = worldBuilder.getTiles();
         this.rooms = worldBuilder.getRooms();
         this.enemies= worldBuilder.getenemies();
+        this.items=worldBuilder.getItems();
 
     }
 
@@ -75,6 +81,10 @@ public class World {
                 battleAdistance( player);
                 break;
 
+            case 'I':
+                PlayScreen.DisplayInvetory(playerInventory,player);
+                break;
+
             default:
                 System.out.println("invalid input ! ");
                 try {
@@ -120,10 +130,17 @@ public class World {
             }
 
 
-            case WINDOW:
-                moveToNextLevel(player);
+            case MONEY:
+            case FOOD: {
+                updateInventory(player, targetX, targetY);
                 break;
+            }
 
+
+            case WINDOW:
+            {
+                moveToNextLevel(player);
+                break;}
 
             default: {
 
@@ -361,6 +378,45 @@ public class World {
 
 
     }
+
+    //add items to player's inventory
+    private void updateInventory(Player player, int targetX, int targetY) {
+
+
+
+        for ( Item item : items)
+        {
+
+            if (targetX == item.getX() && targetY == item.getY())
+            {
+
+                if (item.getTile()==Tile.MONEY)
+                {
+                    playerInventory.addMoney(item.getValue());
+                }
+                else if (item.getTile()==Tile.FOOD)
+                {
+                    System.out.println("food value "+item.getValue());
+                    player.addHealth(item.getValue());
+                }
+                System.out.println("vous avez collecté un item de type : "+item.getTile() + " de valeur de : " +item.getValue());
+                GameSystem.pause();
+                break;
+
+
+
+            }
+
+
+
+        }
+        setTile(player.getPositionX(), player.getPositionY(), Tile.SOL);
+        player.setPosition(targetX,targetY);
+        setTile(targetX,targetY,Tile.PLAYER);
+
+
+    }
+
 
 
 }

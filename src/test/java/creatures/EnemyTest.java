@@ -1,5 +1,6 @@
 package creatures;
 
+import generationProcedurale.Tile;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -10,7 +11,7 @@ class EnemyTest {
     Random random = new Random();
 
     Player player = new Player();
-    Enemy enemy =EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,1,5,5);
+    Enemy enemy =EnemyFactory.createNewEnemy(Tile.ZOMBIE,1,5,5);
 
 
 

@@ -6,7 +6,10 @@ public enum Tile {
     SOL('.') ,
     MUR(' '),
     WINDOW('<'),
-    EDGE('#') ,
+
+    FOOD ('*') ,
+    MONEY ('$') ,
+
     PLAYER('@') ,
     ZOMBIE('Z'),
     SNAKE('S'),

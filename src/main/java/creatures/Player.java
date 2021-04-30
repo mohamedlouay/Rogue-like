@@ -57,6 +57,10 @@ public class Player extends Creature {
         this.level = level;
     }
 
+    public void addHealth (int health) {
+        this.health += health;
+    }
+
 
 
     //Getters

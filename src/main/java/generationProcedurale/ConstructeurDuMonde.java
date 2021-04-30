@@ -4,6 +4,8 @@ package generationProcedurale;
 import creatures.Enemy;
 import creatures.EnemyFactory;
 import creatures.Player;
+import items.Item;
+import items.ItemsFactory;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -19,6 +21,7 @@ public class ConstructeurDuMonde {
     Random random = new Random();
     ArrayList<Room> rooms = new ArrayList<Room>();
     ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+    ArrayList<Item> items = new ArrayList<Item>();
 
 
     public ConstructeurDuMonde(Player player, int lignes, int colonnes) {
@@ -31,6 +34,7 @@ public class ConstructeurDuMonde {
         placeRooms();
         initPlayerPosition(player);
         initEnemiesPosition(player);
+        initItemsPosition(player);
 
     }
 
@@ -209,24 +213,24 @@ public class ConstructeurDuMonde {
                 case 3:
                 case 4: //probabilty of 40% that enemy is a zombie
                     setTile(x, y, Tile.ZOMBIE);
-                    enemies.add(EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE, level, x, y));
+                    enemies.add(EnemyFactory.createNewEnemy(Tile.ZOMBIE, level, x, y));
                     break;
                 case 5:
                 case 6:
                 case 7://probabilty of 30% that enemy is a snake
                     setTile(x, y, Tile.SNAKE);
-                    enemies.add(EnemyFactory.createNewEnemy(EnemyFactory.Entity.SNAKE, level, x, y));
+                    enemies.add(EnemyFactory.createNewEnemy(Tile.SNAKE, level, x, y));
                     break;
 
                 case 8:
                 case 9://probabilty of 20% that enemy is a wolf
                     setTile(x, y, Tile.WOLF);
-                    enemies.add(EnemyFactory.createNewEnemy(EnemyFactory.Entity.WOLF, level, x, y));
+                    enemies.add(EnemyFactory.createNewEnemy(Tile.WOLF, level, x, y));
                     break;
 
                 case 10://probabilty of 10 % that enemy is a dragon
                     setTile(x, y, Tile.DRAGON);
-                    enemies.add(EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON, level, x, y));
+                    enemies.add(EnemyFactory.createNewEnemy(Tile.DRAGON, level, x, y));
                     break;
 
                 default:
@@ -235,8 +239,62 @@ public class ConstructeurDuMonde {
 
 
         }
-
     }
 
 
+
+
+
+
+
+
+        //create and put some items in the map
+        public void initItemsPosition(Player player) {
+            int x;
+            int y;
+            int proba;
+            int level = player.getLevel();
+            for (Room r : rooms) {
+                x = r.getX1() + random.nextInt(r.getX2() - r.getX1());
+                y = r.getY1() + random.nextInt(r.getY2() - r.getY1());
+
+                proba = random.nextInt(10) + 1;
+
+                switch (proba) {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        //probabilty of 40% that the items is food
+                        setTile(x, y, Tile.FOOD);
+                        items.add(ItemsFactory.createNewItem(Tile.FOOD, level, x, y));
+                        break;
+
+                    case 5 :
+                    case 6 :
+                    case 9:
+                    case 10 :
+                        break;
+                    case 7:
+                    case 8:
+
+
+                        //probabilty of 20% that the items is money
+                        setTile(x, y, Tile.MONEY);
+                        items.add(ItemsFactory.createNewItem(Tile.MONEY, level, x, y));
+                        break;
+
+
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + proba);
+                }
+
+
+            }
+        }
+
+
+    public ArrayList<Item> getItems() {
+        return  items ;
+    }
 }

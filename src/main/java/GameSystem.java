@@ -1,4 +1,5 @@
 import creatures.Player;
+import creatures.PlayerInventory;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -19,6 +20,7 @@ public class GameSystem {
         player = new Player();
         world =new World(player, lignes,colonnes);
         screen = new PlayScreen(50,20);
+
 
 
     }
@@ -50,6 +52,7 @@ public class GameSystem {
         char input ;
         System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
         input = scanner.next().toUpperCase().charAt(0);
+
         world.movePlayer(input, player);
 
     }

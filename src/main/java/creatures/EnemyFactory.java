@@ -4,12 +4,10 @@ import generationProcedurale.Tile;
 
 public class EnemyFactory {
 
-    public enum Entity {
-        ZOMBIE,DRAGON ,SNAKE , WOLF;
-    }
 
 
-    public static Enemy createNewEnemy( Entity e ,int level, int x ,int y)
+
+    public static Enemy createNewEnemy(Tile e , int level, int x , int y)
     {
 
         int evolution = level * 10;
