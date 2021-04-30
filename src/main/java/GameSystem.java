@@ -1,4 +1,5 @@
 import creatures.Player;
+import creatures.PlayerInventory;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -19,6 +20,7 @@ public class GameSystem {
         player = new Player();
         world =new World(player, lignes,colonnes);
         screen = new PlayScreen(50,20);
+
 
 
     }

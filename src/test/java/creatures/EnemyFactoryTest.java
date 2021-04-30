@@ -1,5 +1,6 @@
 package creatures;
 
+import generationProcedurale.Tile;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,10 +13,10 @@ class EnemyFactoryTest {
     @Test
     void createNewEnemy() {
 
-        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.ZOMBIE,1,1,1);
+        entity = EnemyFactory.createNewEnemy(Tile.ZOMBIE,1,1,1);
         assertTrue(entity instanceof Enemy);
 
-        entity = EnemyFactory.createNewEnemy(EnemyFactory.Entity.DRAGON,1,1,1);
+        entity = EnemyFactory.createNewEnemy(Tile.DRAGON,1,1,1);
         assertTrue(entity instanceof Enemy);
 
     }

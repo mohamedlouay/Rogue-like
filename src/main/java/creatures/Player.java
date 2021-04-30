@@ -67,6 +67,10 @@ public class Player extends Creature {
         this.argent-=a;
     }
 
+    public void addHealth (int health) {
+        this.health += health;
+    }
+
 
 
     //Getters
