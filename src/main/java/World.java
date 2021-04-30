@@ -254,6 +254,7 @@ public class World {
                 damageResult = player.takeDamage(attackPower);
                 if(damageResult != 0)
                 {
+                    //aaj
                     System.out.println("le player est mort!!!");
                     setTile(player.getPositionX(), player.getPositionY(), Tile.SOL);
                     GameSystem.pause();
