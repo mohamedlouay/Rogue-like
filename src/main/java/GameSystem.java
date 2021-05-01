@@ -19,7 +19,7 @@ public class GameSystem {
     {
         player = new Player();
         world =new World(player, lignes,colonnes);
-        screen = new PlayScreen(50,20);
+        screen = new PlayScreen(120,25);
 
 
 

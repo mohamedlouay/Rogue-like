@@ -5,9 +5,27 @@ import creatures.PlayerInventory;
 import java.util.Scanner;
 
 public class PlayScreen {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
 
-    private int screenWidth = 50;
-    private int screenHeight = 20;
+    public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+    public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+    public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+    public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+    public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
+    public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+    public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+
+    private int screenWidth = 100;
+    private int screenHeight = 30;
     Scanner sc;
 
 
@@ -37,10 +55,36 @@ public class PlayScreen {
 
                 if ((i == startY) || (j == startX) || (i == endY - 1) || (j == endX - 1))//créer le cadre
                 {
-                    System.out.print('#');
-                } else
+                    System.out.print(ANSI_PURPLE+'#'+ANSI_RESET);
+                } else {
+                    char symbol = world.getTile(j, i).getSymbole();
+                    switch (symbol) {
+                        case '@':
+                            System.out.print(ANSI_BLUE+symbol+ANSI_RESET);
+                            break;
+                        case '*':
+                            System.out.print(ANSI_BLACK+ANSI_PURPLE_BACKGROUND+symbol+ANSI_RESET);
+                            break;
+                        case '$':
+                            System.out.print(ANSI_BLACK+ANSI_YELLOW_BACKGROUND+symbol+ANSI_RESET);
+                            break;
+                        case 'D':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'S':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'W':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'Z':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        default:
+                            System.out.print(symbol);
 
-                    System.out.print(world.getTile(j, i).getSymbole());
+                    }
+                }
 
 
             }
@@ -58,15 +102,16 @@ public class PlayScreen {
         System.out.println();
         System.out.println();
         System.out.println();
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println("                            INFOS PLAYER                                  ");
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println(" |LEVEL : " + player.getLevel() +
-                " |HEALTH : " + player.getHealth() +
-                " |ATTACK : " + player.getAttack() +
-                " |DEFENSE : " + player.getDefense() +
-                " |EXPERIENCE : " + player.getExperience() +
-                " |ARME : " + player.getArmeNom() );
+        System.out.println(ANSI_PURPLE+"----------------------------------------------------------------------------------------------------");
+        System.out.println("                                                     INFOS PLAYER                                  ");
+        System.out.println("----------------------------------------------------------------------------------------------------");
+        System.out.println(ANSI_BLUE+" |LEVEL : " + player.getLevel() +ANSI_RESET+
+                ANSI_GREEN+" |HEALTH : " + player.getHealth() +ANSI_RESET+
+                ANSI_RED+" |ATTACK : " + player.getAttack() +ANSI_RESET+
+                ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+
+                ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+
+                ANSI_PURPLE+" |EXPERIENCE : " + player.getExperience() +ANSI_RESET+
+                ANSI_CYAN+" |ARME : " + player.getArmeNom() +ANSI_RESET);
 
 
     }
@@ -277,8 +322,8 @@ public class PlayScreen {
         System.out.println();
         System.out.println();
 
-        System.out.println("                                                                                                      \n" +
-                "                                                                                                      \n" +
+        System.out.println(ANSI_PURPLE+"                                                                                                      \n" +
+                " ********************************************************************************************************************************************************************************************\n" +
                 "                                                                                                      \n" +
                 "                                                                                                      \n" +
                 "                                                                                                      \n" +
@@ -291,13 +336,13 @@ public class PlayScreen {
                 "                        ██║  ██║╚██████╔╝╚██████╔╝╚██████╔╝███████╗    ███████╗██║██║  ██╗███████╗    \n" +
                 "                        ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝    ╚══════╝╚═╝╚═╝  ╚═╝╚══════╝    \n" +
                 "                                                                                                      \n" +
+                "                                                                                 2020-2021                                                               \n" +
+                "                                                                           KHERROUBI Abdelkader                    \n" +
+                "                                                                                BELAHCEN MOHAMED     \n" +
+                "                                                                                    KOUS Nourhene        \n" +
                 "                                                                                                      \n" +
                 "                                                                                                      \n" +
-                "                                                                                                      \n" +
-                "                                                                                                      \n" +
-                "                                                                                                      \n" +
-                "                                                                                                      \n" +
-                "                                                                                                      ");
+                "********************************************************************************************************************************************************************************************"+ANSI_RESET);
     }
 
 

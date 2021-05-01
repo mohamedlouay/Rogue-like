@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Rogue-like:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajout nuy armes">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" afterDir="false" />
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="ajout nuy armes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +28,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="ProjectId" id="1owJLrVeWTHqNoFgvOSpwmFIvi6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,9 +41,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -368,49 +357,7 @@
       <option name="project" value="LOCAL" />
       <updated>1618168919131</updated>
     </task>
-    <task id="LOCAL-00032" summary="update des armes et attak a distance">
-      <created>1619755821792</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1619755821792</updated>
-    </task>
-    <task id="LOCAL-00033" summary="update des armes et attak a distance ..">
-      <created>1619755852830</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1619755852830</updated>
-    </task>
-    <task id="LOCAL-00034" summary="ajout des commentaires">
-      <created>1619755885835</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1619755885835</updated>
-    </task>
-    <task id="LOCAL-00035" summary="ajout de l argent au joueur">
-      <created>1619756169821</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1619756169821</updated>
-    </task>
-    <task id="LOCAL-00036" summary="ajout du marché">
-      <created>1619757739855</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1619757739855</updated>
-    </task>
-    <task id="LOCAL-00037" summary="ajout nuy armes">
-      <created>1619761375952</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1619761375952</updated>
-    </task>
-    <option name="localTasksCounter" value="38" />
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,6 +373,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="update Player" />
+    <MESSAGE value="add comments" />
+    <MESSAGE value="update Player-add coins" />
+    <MESSAGE value="mise a jour du projet !" />
+    <MESSAGE value="ajouter des commentaires" />
+    <MESSAGE value="ajouter des commentaires 1" />
     <MESSAGE value="ajouter la classe Player" />
     <MESSAGE value="ajouter deplacement joueur" />
     <MESSAGE value="ajouter la classe Box" />
@@ -445,12 +398,6 @@
     <MESSAGE value="ajoute des armes" />
     <MESSAGE value="correction." />
     <MESSAGE value="ajout de l atteck a distance" />
-    <MESSAGE value="update des armes et attak a distance" />
-    <MESSAGE value="update des armes et attak a distance .." />
-    <MESSAGE value="ajout des commentaires" />
-    <MESSAGE value="ajout de l argent au joueur" />
-    <MESSAGE value="ajout du marché" />
-    <MESSAGE value="ajout nuy armes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout nuy armes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de l atteck a distance" />
   </component>
 </project>
