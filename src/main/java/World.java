@@ -86,6 +86,9 @@ public class World {
             case 'I':
                 PlayScreen.DisplayInvetory(playerInventory,player);
                 break;
+            case 'C':
+                player.switchDisplaymode();
+                break;
 
             default:
                 System.out.println("invalid input ! ");

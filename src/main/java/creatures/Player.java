@@ -8,6 +8,7 @@ import classes.armes.dague;
 import java.util.ArrayList;
 
 public class Player extends Creature {
+    private boolean displayALL=false;
     private int level = 1;
     private int argent=0;
 
@@ -26,6 +27,12 @@ public class Player extends Creature {
         armes.add(new dague());
         armes.add(new Epee());
         armes.add(new Lance());
+    }
+    public void switchDisplaymode(){
+        this.displayALL=!this.displayALL;
+    }
+    public boolean getDisplayAll(){
+        return this.displayALL;
     }
     public Arme getArme(){
         return this.armes.get(this.arme_courante);

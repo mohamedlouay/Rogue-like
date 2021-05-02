@@ -80,6 +80,21 @@ public class PlayScreen {
                         case 'Z':
                             System.out.print(ANSI_RED+symbol+ANSI_RESET);
                             break;
+                        case 'X':
+                            System.out.print(ANSI_GREEN+'O'+ANSI_RESET);
+                            break;
+                        case '!':
+                            System.out.print(ANSI_YELLOW+symbol+ANSI_RESET);
+                            break;
+                        case 'C':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
+                        case 'L':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
+                        case 'E':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
                         default:
                             System.out.print(symbol);
 
@@ -295,24 +310,61 @@ public class PlayScreen {
 
     public void displayAll(Player player, World world) //function to display all world
     {
-
+        displayInfo(player);
 
         for (int i = 0; i < world.getLignes(); i++) {
             for (int j = 0; j < world.getColonnes(); j++) {
-                System.out.print(world.getTile(j, i).getSymbole());
+                if ((i == 0) || (j == 0) || (i == world.getLignes() - 1) || (j == world.getColonnes() - 1))//créer le cadre
+                {
+                    System.out.print(ANSI_PURPLE+'#'+ANSI_RESET);
+                } else {
+                    char symbol = world.getTile(j, i).getSymbole();
+                    switch (symbol) {
+                        case '@':
+                            System.out.print(ANSI_BLUE+symbol+ANSI_RESET);
+                            break;
+                        case '*':
+                            System.out.print(ANSI_BLACK+ANSI_PURPLE_BACKGROUND+symbol+ANSI_RESET);
+                            break;
+                        case '$':
+                            System.out.print(ANSI_BLACK+ANSI_YELLOW_BACKGROUND+symbol+ANSI_RESET);
+                            break;
+                        case 'D':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'S':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'W':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'Z':
+                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                            break;
+                        case 'X':
+                            System.out.print(ANSI_GREEN+'O'+ANSI_RESET);
+                            break;
+                        case '!':
+                            System.out.print(ANSI_YELLOW+symbol+ANSI_RESET);
+                            break;
+                        case 'C':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
+                        case 'L':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
+                        case 'E':
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                            break;
+                        default:
+                            System.out.print(symbol);
+
+                    }
+                }
             }
             System.out.println();
 
         }
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println("                            INFOS PLAYER                                  ");
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.println("LEVEL : " + player.getLevel());
-        System.out.println("EXPERIENCE : " + player.getExperience());
-        System.out.println("HEALTH : " + player.getHealth());
-        System.out.println("ATTACK : " + player.getAttack());
-        System.out.println("DEFENSE : " + player.getDefense());
-
 
     }
 

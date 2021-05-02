@@ -15,7 +15,7 @@ public class ConstructeurDuMonde {
     Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms = 5;
+    private int maxRooms = 15;
     private int maxRoomSize = 10;
     private int minRoomSize = 5;
     Random random = new Random();
@@ -35,6 +35,11 @@ public class ConstructeurDuMonde {
         initPlayerPosition(player);
         initEnemiesPosition(player);
         initItemsPosition(player);
+        insererUnePorte(this.getRooms().get(this.rooms.size()-1));
+        Random r =new Random();
+
+        insererUneCle(this.getRooms().get(r.nextInt(this.rooms.size()-1)));
+
 
     }
 
@@ -94,6 +99,42 @@ public class ConstructeurDuMonde {
             }
 
         }
+    }
+    public void insererUneCle(Room r){
+        int i=r.getCenter().getCenterX();
+        int j=r.getCenter().getCenterY();
+        tiles[j][i]=Tile.cle;
+
+        tiles[j+1][i+1]=Tile.e;
+        tiles[j+1][i]=Tile.l;
+        tiles[j+1][i-1]=Tile.c;
+
+
+    }
+    public void insererUnePorte(Room r){
+        int j=r.getX2()-1;
+        int i=r.getCenter().getCenterY();
+        tiles[i-1][j-1]=Tile.PORTE;
+        tiles[i-1][j-2]=Tile.PORTE;
+        tiles[i][j]=Tile.PORTE;
+        tiles[i][j-1]=Tile.PORTE;
+        tiles[i][j-2]=Tile.PORTE;
+        tiles[i][j-3]=Tile.PORTE;
+
+        tiles[i+1][j]=Tile.PORTE;
+        tiles[i+1][j-1]=Tile.PORTE;
+        tiles[i+1][j-2]=Tile.PORTE;
+        tiles[i+1][j-3]=Tile.PORTE;
+
+        tiles[i+2][j]=Tile.PORTE;
+        tiles[i+2][j-1]=Tile.PORTE;
+        tiles[i+2][j-2]=Tile.PORTE;
+        tiles[i+2][j-3]=Tile.PORTE;
+
+
+
+
+
     }
 
 

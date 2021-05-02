@@ -11,8 +11,8 @@ public class GameSystem {
 
 
 
-    public int lignes =30;
-    public int colonnes =100 ;
+    public int lignes =50;
+    public int colonnes =200 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()
@@ -34,8 +34,8 @@ public class GameSystem {
 
         while (gameOver == false)
         {
-
-            screen.display(player , world);
+            if(player.getDisplayAll()) screen.displayAll(player , world);
+            else screen.display(player , world);
 
             userInput();
             world.moveEnemies(player);

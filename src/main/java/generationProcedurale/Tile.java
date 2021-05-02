@@ -11,6 +11,13 @@ public static final String ANSI_WHITE = "\u001B[37m";*/
 
 public enum Tile {
 
+    PORTE('X'),
+    cle('!'),
+
+    c('C'),
+    l('L'),
+    e('E'),
+
 
     SOL('.') ,
     MUR(' '),
