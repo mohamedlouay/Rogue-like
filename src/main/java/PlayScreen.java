@@ -123,7 +123,7 @@ public class PlayScreen {
         System.out.println(ANSI_BLUE+" |LEVEL : " + player.getLevel() +ANSI_RESET+
                 ANSI_GREEN+" |HEALTH : " + player.getHealth() +ANSI_RESET+
                 ANSI_RED+" |ATTACK : " + player.getAttack() +ANSI_RESET+
-                ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+
+                ANSI_YELLOW+" |Cle : " + player.aLACle() +ANSI_RESET+
                 ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+
                 ANSI_PURPLE+" |EXPERIENCE : " + player.getExperience() +ANSI_RESET+
                 ANSI_CYAN+" |ARME : " + player.getArmeNom() +ANSI_RESET);

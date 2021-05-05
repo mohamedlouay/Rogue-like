@@ -11,6 +11,7 @@ public class Player extends Creature {
     private boolean displayALL=false;
     private int level = 1;
     private int argent=0;
+    private boolean aLaCle=false;
 
     ArrayList<Arme> armes = new ArrayList<>();
     private int arme_courante = 0;
@@ -27,6 +28,12 @@ public class Player extends Creature {
         armes.add(new dague());
         armes.add(new Epee());
         armes.add(new Lance());
+    }
+    public void  setCle(){
+        this.aLaCle=true;
+    }
+    public boolean aLACle(){
+        return  this.aLaCle;
     }
     public void switchDisplaymode(){
         this.displayALL=!this.displayALL;

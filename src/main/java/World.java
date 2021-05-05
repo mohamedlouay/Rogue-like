@@ -130,6 +130,21 @@ public class World {
                 setTile(oldX,oldY,Tile.SOL);
                 break;
             }
+            case PORTE: {
+
+                //level up :
+                if (player.aLACle())    moveToNextLevel(player);
+
+                break;
+            }
+            case cle: {
+                System.out.println(" cleeeeeeeeeeeeeeeeee");
+
+                //level up :
+               player.setCle();
+
+                break;
+            }
 
 
             case ZOMBIE:
