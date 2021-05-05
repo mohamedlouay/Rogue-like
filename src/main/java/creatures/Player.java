@@ -19,7 +19,7 @@ public class Player extends Creature {
 
     public Player() {
         this.argent=10;
-        this.health = 100 ;
+        this.health = 5000 ;
         this.experience=0;
         this.defense = 70;
         this.attack=100;

@@ -12,7 +12,7 @@ public class GameSystem {
 
 
     public int lignes =30;
-    public int colonnes =150 ;
+    public int colonnes =100 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()

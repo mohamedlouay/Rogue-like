@@ -169,14 +169,11 @@ public class World {
             }
 
 
-            case WINDOW:
-            {
-                moveToNextLevel(player);
-                break;}
+
 
             default: {
 
-                battleEnemey(player ,targetX,targetY ) ;// battle with the enemy
+               break ;
 
             }
 
