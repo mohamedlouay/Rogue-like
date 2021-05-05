@@ -11,8 +11,8 @@ public class GameSystem {
 
 
 
-    public int lignes =50;
-    public int colonnes =200 ;
+    public int lignes =30;
+    public int colonnes =150 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()

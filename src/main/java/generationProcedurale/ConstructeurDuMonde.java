@@ -15,7 +15,7 @@ public class ConstructeurDuMonde {
     Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms = 2;
+    private int maxRooms = 4;
     private int maxRoomSize = 10;
     private int minRoomSize = 5;
     Random random = new Random();
@@ -106,8 +106,8 @@ public class ConstructeurDuMonde {
         }
     }
     public void insererUneCle(Room r){
-        int i=r.getCenter().getCenterX();
-        int j=r.getCenter().getCenterY();
+        int i=r.getCenter().getCenterX()+1;
+        int j=r.getCenter().getCenterY()+1;
         tiles[j][i]=Tile.cle;
 
         tiles[j+1][i+1]=Tile.e;

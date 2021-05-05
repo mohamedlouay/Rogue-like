@@ -141,10 +141,12 @@ public class World {
                 break;
             }
             case cle: {
-                System.out.println(" cleeeeeeeeeeeeeeeeee");
 
                 //level up :
                player.setCle();
+                player.setPosition(targetX,targetY);
+                setTile(targetX,targetY,Tile.PLAYER);
+                setTile(oldX,oldY,Tile.SOL);
 
                 break;
             }
@@ -444,7 +446,7 @@ public class World {
                 }
                 else if (item.getTile()==Tile.FOOD)
                 {
-                    System.out.println("food value "+item.getValue());
+
                     player.addHealth(item.getValue());
                 }
                 System.out.println("vous avez collecté un item de type : "+item.getTile() + " de valeur de : " +item.getValue());
