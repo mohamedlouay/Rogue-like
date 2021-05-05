@@ -374,7 +374,7 @@ public class PlayScreen {
         System.out.println();
         System.out.println();
 
-        System.out.println(ANSI_PURPLE+"                                                                                                      \n" +
+        System.out.println(ANSI_CYAN+"                                                                                                      \n" +
                 " ********************************************************************************************************************************************************************************************\n" +
                 "                                                                                                      \n" +
                 "                                                                                                      \n" +

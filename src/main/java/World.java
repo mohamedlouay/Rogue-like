@@ -13,6 +13,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class World {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
     private Tile[][] tiles;
     ArrayList<Room> rooms;
     ArrayList<Enemy> enemies = new ArrayList<Enemy>();
@@ -251,7 +260,8 @@ public class World {
                 //player turn
 
                 attackPower = player.attack();
-                System.out.println("le player va attacker le "+ enemey.tile +" avec une force de  " + attackPower);
+                System.out.println(ANSI_BLUE+"PLAYER (ATT:"+player.getAttack()+" ,DEF:"+player.getDefense()+") " +
+                        "==> "+ANSI_RED+enemey.tile+"(ATT:"+enemey.getAttack()+",DEF:"+enemey.getDefense()+")"+ANSI_RESET);
 
                 damageResult = enemey.takeDamage(attackPower);
                 if(damageResult != 0 ) // he died and we return his experience
@@ -267,7 +277,8 @@ public class World {
                 //the enemey is still alive
                 //his turn to attack
                 attackPower= enemey.attack();
-                System.out.println("le "+ enemey.tile +" va attacker le player avec une force de  " + attackPower);
+                System.out.println(ANSI_BLUE+"PLAYER (ATT:"+player.getAttack()+" ,DEF:"+player.getDefense()+") " +
+                        "<== "+ANSI_RED+enemey.tile+"(ATT:"+enemey.getAttack()+",DEF:"+enemey.getDefense()+")"+ANSI_RESET);
                 GameSystem.pause();
 
                 damageResult = player.takeDamage(attackPower);
