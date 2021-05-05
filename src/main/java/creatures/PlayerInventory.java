@@ -2,7 +2,7 @@ package creatures;
 
 public class PlayerInventory {
 
-    int money  ;
+    int money =50 ;
 
     public PlayerInventory()
     {

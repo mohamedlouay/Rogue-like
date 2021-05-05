@@ -11,15 +11,15 @@ public class GameSystem {
 
 
 
-    public int lignes =30;
-    public int colonnes =100 ;
+    public int lignes =50;
+    public int colonnes =200 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()
     {
         player = new Player();
         world =new World(player, lignes,colonnes);
-        screen = new PlayScreen(50,20);
+        screen = new PlayScreen(120,25);
 
 
 
@@ -34,8 +34,8 @@ public class GameSystem {
 
         while (gameOver == false)
         {
-
-            screen.display(player , world);
+            if(player.getDisplayAll()) screen.displayAll(player , world);
+            else screen.display(player , world);
 
             userInput();
             world.moveEnemies(player);
@@ -50,7 +50,7 @@ public class GameSystem {
 
     private void userInput() {
         char input ;
-        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme  :");
+        System.out.println("entrer (z/Q/D/W) pour se deplacer , ( A ) pour changer d'arme , (I) pour vesiter l inventaire ,(X) pour une attack a distance  :");
         input = scanner.next().toUpperCase().charAt(0);
 
         world.movePlayer(input, player);
