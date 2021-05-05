@@ -15,7 +15,7 @@ public class ConstructeurDuMonde {
     Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms = 4;
+    private int maxRooms = 2;
     private int maxRoomSize = 10;
     private int minRoomSize = 5;
     Random random = new Random();

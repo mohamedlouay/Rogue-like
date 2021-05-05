@@ -74,6 +74,9 @@ public class World {
     // functions
 
     public void movePlayer ( char input , Player player) {
+
+        player.setHealth(player.getHealth()-1);
+
         int playerX = player.getPositionX();
         int playerY = player.getPositionY();
 
@@ -356,6 +359,15 @@ public class World {
         {
             createWindow(player);
         }
+
+        if (player.getHealth()==0)
+        {
+            System.out.println("player died of hungry ");
+            GameSystem.pause();
+            System.exit(0);
+
+
+        }
     }
 
 
@@ -408,6 +420,7 @@ public class World {
         this.tiles = worldBuilder.getTiles();
         this.rooms = worldBuilder.getRooms();
         this.enemies= worldBuilder.getenemies();
+        this.items=worldBuilder.getItems();
 
         player.setLevel(player.getLevel()+1);
 
