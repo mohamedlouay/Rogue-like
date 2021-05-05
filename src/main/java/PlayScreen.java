@@ -80,6 +80,7 @@ public class PlayScreen {
 
         System.out.println("1 : acheter des armes ");
         System.out.println("2 : acheter de nourriture ");
+        System.out.println("3 : sortir ");
         int choix = new Scanner(System.in).nextInt();
         System.out.println();
 
@@ -88,6 +89,8 @@ public class PlayScreen {
             break;
             case 2 :
                 buyFood(playerInventory, player);
+                break;
+            case 3 :
                 break;
             default:
                 System.out.println("invalid choice !!!");

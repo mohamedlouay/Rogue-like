@@ -61,6 +61,11 @@ public class ConstructeurDuMonde {
         return tiles;
     }
 
+    public Tile getTile(int x, int y) {
+        Tile tile = tiles[y][x];
+        return tile;
+    }
+
 
     public ArrayList<Room> getRooms() {
         return rooms;
@@ -202,99 +207,114 @@ public class ConstructeurDuMonde {
         int proba;
         int level = player.getLevel();
         for (Room r : rooms) {
-            x = r.getX1() + random.nextInt(r.getX2() - r.getX1());
-            y = r.getY1() + random.nextInt(r.getY2() - r.getY1());
 
-            proba = random.nextInt(10) + 1;
-
-            switch (proba) {
-                case 1:
-                case 2:
-                case 3:
-                case 4: //probabilty of 40% that enemy is a zombie
-                    setTile(x, y, Tile.ZOMBIE);
-                    enemies.add(EnemyFactory.createNewEnemy(Tile.ZOMBIE, level, x, y));
-                    break;
-                case 5:
-                case 6:
-                case 7://probabilty of 30% that enemy is a snake
-                    setTile(x, y, Tile.SNAKE);
-                    enemies.add(EnemyFactory.createNewEnemy(Tile.SNAKE, level, x, y));
-                    break;
-
-                case 8:
-                case 9://probabilty of 20% that enemy is a wolf
-                    setTile(x, y, Tile.WOLF);
-                    enemies.add(EnemyFactory.createNewEnemy(Tile.WOLF, level, x, y));
-                    break;
-
-                case 10://probabilty of 10 % that enemy is a dragon
-                    setTile(x, y, Tile.DRAGON);
-                    enemies.add(EnemyFactory.createNewEnemy(Tile.DRAGON, level, x, y));
-                    break;
-
-                default:
-                    throw new IllegalStateException("Unexpected value: " + proba);
-            }
+            int nbrEnemyPerRoom = random.nextInt(level + 1);//nombre d'ennemies dans une salle est proportionnel au level de player
+            int nbEnemy = 1;
+            while (nbEnemy <= nbrEnemyPerRoom) {
+                nbEnemy++;
 
 
-        }
-    }
-
-
-
-
-
-
-
-
-        //create and put some items in the map
-        public void initItemsPosition(Player player) {
-            int x;
-            int y;
-            int proba;
-            int level = player.getLevel();
-            for (Room r : rooms) {
                 x = r.getX1() + random.nextInt(r.getX2() - r.getX1());
                 y = r.getY1() + random.nextInt(r.getY2() - r.getY1());
 
-                proba = random.nextInt(10) + 1;
+                if (getTile(x, y) == Tile.SOL) { //assurer que le tile n'est pas occupé par un autre ennemi
 
-                switch (proba) {
-                    case 1:
-                    case 2:
-                    case 3:
-                    case 4:
-                        //probabilty of 40% that the items is food
-                        setTile(x, y, Tile.FOOD);
-                        items.add(ItemsFactory.createNewItem(Tile.FOOD, level, x, y));
-                        break;
+                    proba = random.nextInt(10) + 1;
 
-                    case 5 :
-                    case 6 :
-                    case 9:
-                    case 10 :
-                        break;
-                    case 7:
-                    case 8:
+                    switch (proba) {
+                        case 1:
+                        case 2:
+                        case 3:
+                        case 4: //probabilty of 40% that enemy is a zombie
+                            setTile(x, y, Tile.ZOMBIE);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.ZOMBIE, level, x, y));
+                            break;
+                        case 5:
+                        case 6:
+                        case 7://probabilty of 30% that enemy is a snake
+                            setTile(x, y, Tile.SNAKE);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.SNAKE, level, x, y));
+                            break;
 
+                        case 8:
+                        case 9://probabilty of 20% that enemy is a wolf
+                            setTile(x, y, Tile.WOLF);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.WOLF, level, x, y));
+                            break;
 
-                        //probabilty of 20% that the items is money
-                        setTile(x, y, Tile.MONEY);
-                        items.add(ItemsFactory.createNewItem(Tile.MONEY, level, x, y));
-                        break;
+                        case 10://probabilty of 10 % that enemy is a dragon
+                            setTile(x, y, Tile.DRAGON);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.DRAGON, level, x, y));
+                            break;
 
-
-                    default:
-                        throw new IllegalStateException("Unexpected value: " + proba);
+                        default:
+                            throw new IllegalStateException("Unexpected value: " + proba);
+                    }
                 }
 
 
             }
         }
+    }
+
+
+    //create and put some items in the map
+    public void initItemsPosition(Player player) {
+        int x;
+        int y;
+        int proba;
+        int level = player.getLevel();
+
+
+        for (Room r : rooms) {
+            int nbrItemPerRoom = random.nextInt(level + 1);//nombre items dans une salle est proportionnel au level de player
+            int nbItem = 1;
+            while (nbItem <= nbrItemPerRoom) {
+                nbItem++;
+
+                x = r.getX1() + random.nextInt(r.getX2() - r.getX1());
+                y = r.getY1() + random.nextInt(r.getY2() - r.getY1());
+
+                if (getTile(x, y) == Tile.SOL) { //assurer que le tile n'est pas occupé par un autre item
+
+                    proba = random.nextInt(10) + 1;
+
+                    switch (proba) {
+                        case 1:
+                        case 2:
+                        case 3:
+                        case 4:
+                        case 5:
+                        case 6:
+                        case 7:
+                        case 8:
+                            //probabilty of 80% that the items is food
+                            setTile(x, y, Tile.FOOD);
+                            items.add(ItemsFactory.createNewItem(Tile.FOOD, level, x, y));
+                            break;
+
+
+                        case 9:
+                        case 10:
+
+
+                            //probabilty of 20% that the items is money
+                            setTile(x, y, Tile.MONEY);
+                            items.add(ItemsFactory.createNewItem(Tile.MONEY, level, x, y));
+                            break;
+
+
+                        default:
+                            throw new IllegalStateException("Unexpected value: " + proba);
+                    }
+                }
+
+            }
+        }
+    }
 
 
     public ArrayList<Item> getItems() {
-        return  items ;
+        return items;
     }
 }

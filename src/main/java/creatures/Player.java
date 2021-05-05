@@ -17,7 +17,7 @@ public class Player extends Creature {
 
     public Player() {
         this.argent=10;
-        this.health = 100 ;
+        this.health = 300 ;
         this.experience=0;
         this.defense = 70;
         this.attack=100;
@@ -90,6 +90,8 @@ public class Player extends Creature {
         {
             this.experience -= 100 ;
             this.argent+=50;
+            this.attack+=20;
+            this.defense+=10;
             System.out.println("ennemi mort !!!");
             System.out.println(" + 50 $  ");
 

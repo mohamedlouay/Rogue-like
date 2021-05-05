@@ -96,6 +96,15 @@ public class World {
 
 
         }
+
+        //decrease health by 1 in every mouvement so the player should always eat food
+        player.addHealth(-1);
+        if (player.getHealth()<1)
+        {
+            System.out.println("the player died by hunger !!");
+            GameSystem.pause();
+            System.exit(0);
+        }
     }
 
 
@@ -145,7 +154,7 @@ public class World {
 
             default: {
 
-                battleEnemey(player ,targetX,targetY ) ;// battle with the enemy
+                break ;// battle with the enemy
 
             }
 
@@ -209,12 +218,10 @@ public class World {
                 battleEnemey(player ,targetX,targetY ) ;// battle with the player
                 break;
             }
-            default: {
 
-                battleEnemey(player ,targetX,targetY ) ;// battle with the player
 
-            }
-
+            default:
+                break;
         }
 
 
@@ -249,7 +256,7 @@ public class World {
                 //player turn
 
                 attackPower = player.attack();
-                System.out.println("le player va attacker le "+ enemey.tile +" avec une force de  " + attackPower);
+                System.out.println("le joueur  va attaquer le "+ enemey.tile +" avec une force de  " + attackPower);
 
                 damageResult = enemey.takeDamage(attackPower);
                 if(damageResult != 0 ) // he died and we return his experience
@@ -265,7 +272,7 @@ public class World {
                 //the enemey is still alive
                 //his turn to attack
                 attackPower= enemey.attack();
-                System.out.println("le "+ enemey.tile +" va attacker le player avec une force de  " + attackPower);
+                System.out.println("le "+ enemey.tile +" va attaquer le player avec une force de  " + attackPower);
                 GameSystem.pause();
 
                 damageResult = player.takeDamage(attackPower);
@@ -380,6 +387,7 @@ public class World {
         this.tiles = worldBuilder.getTiles();
         this.rooms = worldBuilder.getRooms();
         this.enemies= worldBuilder.getenemies();
+        this.items= worldBuilder.getItems();
 
         player.setLevel(player.getLevel()+1);
 
@@ -403,7 +411,7 @@ public class World {
                 }
                 else if (item.getTile()==Tile.FOOD)
                 {
-                    System.out.println("food value "+item.getValue());
+
                     player.addHealth(item.getValue());
                 }
                 System.out.println("vous avez collecté un item de type : "+item.getTile() + " de valeur de : " +item.getValue());

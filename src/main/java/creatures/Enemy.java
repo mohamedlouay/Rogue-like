@@ -32,6 +32,7 @@ public class Enemy extends Creature {
         if (distance <= 10 + player.getLevel()) {// the player is in the enemy zone
             if (adx > ady) { //moving the enemy the X axis
                 if (distanceX > 0) { // move left
+
                     return 'Q';
                 } else {
                     return 'D';   // move right

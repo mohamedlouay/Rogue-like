@@ -14,12 +14,13 @@ public class ItemsFactory {
 
         switch (t){
 
-            case MONEY: return new Item(Tile.MONEY,50+evolution,x,y) ;
+            case MONEY: return new Item(Tile.MONEY,100+evolution,x,y) ;
             case FOOD: return new Item(Tile.FOOD,30+evolution,x,y) ;
 
 
         }
         return null ;
+
     }
 
 
