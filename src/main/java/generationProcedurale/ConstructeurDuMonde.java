@@ -15,7 +15,7 @@ public class ConstructeurDuMonde {
     Tile[][] tiles;
     int lignes;
     int colonnes;
-    private int maxRooms = 4;
+    private int maxRooms = 20;
     private int maxRoomSize = 10;
     private int minRoomSize = 5;
     Random random = new Random();
@@ -249,7 +249,7 @@ public class ConstructeurDuMonde {
         int level = player.getLevel();
         for (Room r : rooms) {
 
-            int nbrEnemyPerRoom = random.nextInt(level + 1);//nombre d'ennemies dans une salle est proportionnel au level de player
+            int nbrEnemyPerRoom = random.nextInt(level + 3);//nombre d'ennemies dans une salle est proportionnel au level de player
             int nbEnemy = 1;
             while (nbEnemy <= nbrEnemyPerRoom) {
                 nbEnemy++;
@@ -308,7 +308,7 @@ public class ConstructeurDuMonde {
 
 
         for (Room r : rooms) {
-            int nbrItemPerRoom = random.nextInt(level + 1);//nombre items dans une salle est proportionnel au level de player
+            int nbrItemPerRoom = random.nextInt(level + 3);//nombre items dans une salle est proportionnel au level de player
             int nbItem = 1;
             while (nbItem <= nbrItemPerRoom) {
                 nbItem++;
