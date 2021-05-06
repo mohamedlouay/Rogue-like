@@ -239,7 +239,7 @@ public class World {
             }
             default: {
 
-                battleEnemey(player ,targetX,targetY ) ;// battle with the player
+                break;
 
             }
 
