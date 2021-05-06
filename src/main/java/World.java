@@ -353,11 +353,6 @@ public class World {
 
     public void update(Player player) {
 
-        // check if all the enemies are died so create a windows to the next level
-        if (enemies.size()==0 )
-        {
-            createWindow(player);
-        }
 
         if (player.getHealth()==0)
         {
