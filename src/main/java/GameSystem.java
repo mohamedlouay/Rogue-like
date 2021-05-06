@@ -11,15 +11,15 @@ public class GameSystem {
 
 
 
-    public int lignes =30;
-    public int colonnes =100 ;
+    public int lignes =25;
+    public int colonnes =150 ;
     Scanner scanner = new Scanner(System.in);
 
     public GameSystem()
     {
         player = new Player();
         world =new World(player, lignes,colonnes);
-        screen = new PlayScreen(120,25);
+        screen = new PlayScreen(150,25);
 
 
 
