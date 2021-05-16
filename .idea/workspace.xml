@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Rogue-like:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +48,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -433,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620191890007</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update">
+      <created>1620325468521</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1620325468521</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +468,6 @@
     <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
-    <MESSAGE value="update" />
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
@@ -474,6 +485,7 @@
     <MESSAGE value="modif 2" />
     <MESSAGE value="ajoute de la porte et la clé" />
     <MESSAGE value="modification Affichage" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification Affichage" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
