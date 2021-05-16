@@ -9,7 +9,7 @@ and excute the command in your terminal :
 java -jar Rogue_like_jar 
 
 
-# How to operate : 
+# How to operate  
 
 Operate the player character with the keyboard 
  Move up    	    : Z
