@@ -9,7 +9,7 @@ class EnemyFactoryTest {
 
     Creature entity ;
 
-
+/*
     @Test
     void createNewEnemy() {
 
@@ -20,4 +20,6 @@ class EnemyFactoryTest {
         assertTrue(entity instanceof Enemy);
 
     }
+
+ */
 }
