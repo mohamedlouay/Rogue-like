@@ -19,9 +19,9 @@ public class Player extends Creature {
 
     public Player() {
         this.argent=10;
-        this.health = 600 ;
+        this.health = 1000 ;
         this.experience=0;
-        this.defense = 70;
+        this.defense = 0;
         this.attack=100;
         this.attack=this.armes.size()==0?this.attack:this.armes.get(arme_courante).getPuissance();
         //tester les armes :
@@ -116,23 +116,45 @@ public class Player extends Creature {
 
     }
 
+    @Override
     public int takeDamage(int damage)
     {
+        int result = 0 ;
         damage = damage - this.defense ; // check if attack does damage
 
         if (damage > 0) {
             this.health = this.health - damage;
             if (this.health <= 0 )// player died
             {
-                return 1 ;
+                result =  1 ;
 
             }
 
 
         }
-        return 0 ;
+        return result ;
 
     }
+
+
+    public int takeDamageDistance (int damage)
+    {
+        int result = 0 ;
+        damage = damage - this.defense ; // check if attack does damage
+                if (damage > 0) {
+            this.health = this.health - damage;
+            if (this.health <= 0 )// player died
+            {
+                result =  1 ;
+
+            }
+
+
+        }
+        return result ;
+
+    }
+
 
 
 

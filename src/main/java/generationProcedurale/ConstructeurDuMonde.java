@@ -1,7 +1,7 @@
 package generationProcedurale;
 
 
-import creatures.Enemy;
+import creatures.Creature;
 import creatures.EnemyFactory;
 import creatures.Player;
 import items.Item;
@@ -20,7 +20,7 @@ public class ConstructeurDuMonde {
     private int minRoomSize = 5;
     Random random = new Random();
     ArrayList<Room> rooms = new ArrayList<Room>();
-    ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+    ArrayList<Creature> enemies = new ArrayList<Creature>();
     ArrayList<Item> items = new ArrayList<Item>();
 
 
@@ -73,7 +73,7 @@ public class ConstructeurDuMonde {
         return rooms;
     }
 
-    public ArrayList<Enemy> getenemies() {
+    public ArrayList<Creature> getenemies() {
         return enemies;
     }
 
@@ -118,20 +118,8 @@ public class ConstructeurDuMonde {
         int i=r.getCenter().getCenterY();
         tiles[i-1][j-1]=Tile.PORTE;
         tiles[i-1][j-2]=Tile.PORTE;
-        tiles[i][j]=Tile.PORTE;
         tiles[i][j-1]=Tile.PORTE;
         tiles[i][j-2]=Tile.PORTE;
-        tiles[i][j-3]=Tile.PORTE;
-
-        tiles[i+1][j]=Tile.PORTE;
-        tiles[i+1][j-1]=Tile.PORTE;
-        tiles[i+1][j-2]=Tile.PORTE;
-        tiles[i+1][j-3]=Tile.PORTE;
-
-        tiles[i+2][j]=Tile.PORTE;
-        tiles[i+2][j-1]=Tile.PORTE;
-        tiles[i+2][j-2]=Tile.PORTE;
-        tiles[i+2][j-3]=Tile.PORTE;
 
 
 
@@ -259,7 +247,7 @@ public class ConstructeurDuMonde {
 
                     proba = random.nextInt(10) + 1;
 
-                    switch (proba) {
+                    switch (10) {
                         case 1:
                         case 2:
                         case 3:
@@ -270,14 +258,14 @@ public class ConstructeurDuMonde {
                         case 5:
                         case 6:
                         case 7://probabilty of 30% that enemy is a snake
-                            setTile(x, y, Tile.SNAKE);
-                            enemies.add(EnemyFactory.createNewEnemy(Tile.SNAKE, level, x, y));
+                            setTile(x, y, Tile.BAT);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.BAT, level, x, y));
                             break;
 
                         case 8:
                         case 9://probabilty of 20% that enemy is a wolf
-                            setTile(x, y, Tile.WOLF);
-                            enemies.add(EnemyFactory.createNewEnemy(Tile.WOLF, level, x, y));
+                            setTile(x, y, Tile.GOBLIN);
+                            enemies.add(EnemyFactory.createNewEnemy(Tile.GOBLIN, level, x, y));
                             break;
 
                         case 10://probabilty of 10 % that enemy is a dragon

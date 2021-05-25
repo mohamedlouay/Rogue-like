@@ -1,5 +1,9 @@
 package creatures;
 
+import generationProcedurale.Tile;
+import items.Item;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -11,19 +15,22 @@ public class Creature {
     protected int experience = 90;
     protected int positionX;
     protected int positionY;
-    Random random = new Random();
+    public Tile tile ;
+    public Random random = new Random();
+    public ArrayList<Item> itemsStolen =new ArrayList<>();
 
     public Creature() {
 
     }
 
-    public Creature(int health, int attack, int defense, int experience, int positionX, int positionY) {
+    public Creature(Tile tile ,int health, int attack, int defense, int experience, int positionX, int positionY) {
         this.health = health;
         this.attack = attack;
         this.defense = defense;
         this.experience = experience;
         this.positionX = positionX;
         this.positionY = positionY;
+        this.tile = tile ;
     }
 
 
@@ -114,5 +121,49 @@ public class Creature {
 
     }
 
+
+    public char move(Player player, ArrayList<Creature> enemies, Tile[][] tiles) {
+        int distanceX = this.positionX - player.getPositionX();
+        int distanceY = this.positionY - player.getPositionY();
+        int adx = Math.abs(distanceX);
+        int ady = Math.abs(distanceY);
+        int distance = adx + ady;
+
+
+        //the distance of detecting the player is proportional of his level
+
+
+        if (distance <= 10 + player.getLevel()) {// the player is in the enemy zone
+            if (adx > ady) { //moving the enemy the X axis
+                if (distanceX > 0) { // move left
+
+                    return 'Q';
+                } else {
+                    return 'D';   // move right
+                }
+            } else {//moving the enemy the Y axis
+                if (distanceY > 0) { // move down
+                    return 'Z';
+                } else {
+                    return 'W';   // move up
+                }
+
+            }
+
+        } else {//the player is outside the enemy zone. so generate a random move
+            String clavier = "AZQDW";
+            return clavier.charAt(random.nextInt(clavier.length())); // return random caractere parmi a z q d w
+
+
+        }
+
+
+    }
+
+
+    public void collect (int targetX, int targetY, ArrayList<Item> items, Tile[][]tiles)
+    {
+
+    }
 
 }

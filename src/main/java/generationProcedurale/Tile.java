@@ -19,6 +19,9 @@ public enum Tile {
     e('E'),
 
 
+    FIRE('-'),
+
+
     SOL('.') ,
     MUR(' '),
     WINDOW('<'),
@@ -28,9 +31,10 @@ public enum Tile {
 
     PLAYER('@') ,
     ZOMBIE('Z'),
-    SNAKE('S'),
+    ZOMBIE_INVISIBLE('.'),
+    BAT('B'),
     DRAGON('D'),
-    WOLF('W');
+    GOBLIN('G');
 
     private char symbole ;
 
