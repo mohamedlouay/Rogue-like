@@ -41,8 +41,8 @@ public class Bat extends Creature {
     }
 
     private void duplicate(Player player, ArrayList<Creature> enemies, Tile[][] tiles) {
-        int wx = this.positionX + random.nextInt(2);
-        int wy = this.positionY + random.nextInt(2);
+        int wx = this.positionX + random.nextInt(3);
+        int wy = this.positionY + random.nextInt(3);
 
         int prob = random.nextInt(100);
 

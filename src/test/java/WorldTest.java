@@ -1,5 +1,6 @@
 import classes.armes.Arme;
 import creatures.Player;
+import gameSystem.World;
 import generationProcedurale.Tile;
 import org.junit.jupiter.api.Test;
 

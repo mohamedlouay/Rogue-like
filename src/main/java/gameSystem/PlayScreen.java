@@ -1,3 +1,5 @@
+package gameSystem;
+
 import classes.armes.Lance;
 import creatures.Player;
 import creatures.PlayerInventory;
@@ -70,7 +72,7 @@ public class PlayScreen {
                         case FOOD:
                             System.out.print(ANSI_BLACK+ANSI_PURPLE_BACKGROUND+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case ARMOR:
+                        case INVISIBILITY_CLOAK:
                             System.out.print(ANSI_BLACK+ANSI_GREEN_BACKGROUND+tile.getSymbole()+ANSI_RESET);
                             break;
                         case MONEY:
@@ -125,7 +127,7 @@ public class PlayScreen {
         System.out.println("----------------------------------------------------------------------------------------------------");
         System.out.println(ANSI_BLUE+" |LEVEL : " + player.getLevel() +ANSI_RESET+
                 ANSI_GREEN+" |HEALTH : " + player.getHealth() +ANSI_RESET+
-                ANSI_GREEN+" |PROTECTION : " + player.getProtection() +ANSI_RESET+
+                ANSI_GREEN+" |INVISIBILITY : " + player.getProtection() +ANSI_RESET+
                 ANSI_RED+" |ATTACK : " + player.getAttack() +ANSI_RESET+
                 ANSI_YELLOW+" |Cle : " + player.aLACle() +ANSI_RESET+
                 ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+

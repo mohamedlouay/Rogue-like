@@ -10,26 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Enemi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Goblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/BatTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/GameSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/PlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +31,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1owJLrVeWTHqNoFgvOSpwmFIvi6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,6 +69,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
@@ -85,24 +86,12 @@
       <recent name="creatures.enemies" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="creatures.enemies" />
       <recent name="classes.generationProcedurale" />
       <recent name="classes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ConstructeurDuMonde" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.ConstructeurDuMonde" />
-      <module name="Rogue-like" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BatTest.move">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -120,6 +109,22 @@
     <configuration name="Voiture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Voiture" />
       <module name="Rogue-like" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BatTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creatures.enemies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creatures.enemies" />
+      <option name="MAIN_CLASS_NAME" value="creatures.enemies.BatTest" />
+      <option name="METHOD_NAME" value="move" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BatTest.move" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Voiture" />
         <item itemvalue="JUnit.ConstructeurDuMondeTest.placeRooms" />
-        <item itemvalue="Application.ConstructeurDuMonde" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621936347271</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire">
+      <created>1621944030786</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1621944030786</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,7 +502,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifier la classe Box" />
     <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
@@ -515,6 +526,7 @@
     <MESSAGE value="create Bat enemy , with his behavior &quot;duplicate when the player is in his zone&quot;" />
     <MESSAGE value="create a Globin class : &#10;his behavior is :&#10;-steal items  , and run away if the player is in his zone ,&#10;the player get all the items stolen by the globen if hi kill him" />
     <MESSAGE value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
+    <MESSAGE value="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire" />
+    <option name="LAST_COMMIT_MESSAGE" value="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire" />
   </component>
 </project>

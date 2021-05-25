@@ -1,7 +1,7 @@
-import creatures.Player;
-import creatures.PlayerInventory;
+package gameSystem;
 
-import java.awt.*;
+import creatures.Player;
+
 import java.util.Scanner;
 
 public class GameSystem {

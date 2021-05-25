@@ -27,7 +27,7 @@ public enum Tile {
     WINDOW('<'),
 
     FOOD ('*') ,
-    ARMOR (')') ,
+    INVISIBILITY_CLOAK (')') ,
     MONEY ('$') ,
 
     PLAYER('@') ,

@@ -247,7 +247,7 @@ public class ConstructeurDuMonde {
 
                     proba = random.nextInt(10) + 1;
 
-                    switch (10) {
+                    switch (proba) {
                         case 1:
                         case 2:
                         case 3:
@@ -305,7 +305,7 @@ public class ConstructeurDuMonde {
 
                     proba = random.nextInt(10) + 1;
 
-                    switch (8) {
+                    switch (proba) {
                         case 1:
                         case 2:
                         case 3:
@@ -322,8 +322,8 @@ public class ConstructeurDuMonde {
                         case 7:
                         case 8:
                             //probabilty of 20% that the items is armor
-                            setTile(x, y, Tile.ARMOR);
-                            items.add(ItemsFactory.createNewItem(Tile.ARMOR, level, x, y));
+                            setTile(x, y, Tile.INVISIBILITY_CLOAK);
+                            items.add(ItemsFactory.createNewItem(Tile.INVISIBILITY_CLOAK, level, x, y));
                             break;
 
 

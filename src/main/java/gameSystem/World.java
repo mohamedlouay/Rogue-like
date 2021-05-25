@@ -1,4 +1,4 @@
-
+package gameSystem;
 
 import classes.armes.Lance;
 import creatures.Creature;
@@ -8,7 +8,6 @@ import generationProcedurale.ConstructeurDuMonde;
 import generationProcedurale.Room;
 import generationProcedurale.Tile;
 import items.Item;
-import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.ArrayList;
 
@@ -66,6 +65,12 @@ public class World {
 
     public int getLignes() {
         return lignes;
+    }
+    public ArrayList<Creature> getEnnemies() {
+        return enemies;
+    }
+  public Tile[][] getTiles() {
+        return tiles;
     }
 
 
@@ -172,7 +177,7 @@ public class World {
 
 
             case MONEY:
-            case ARMOR:
+            case INVISIBILITY_CLOAK:
             case FOOD: {
                 updateInventory(player, targetX, targetY);
                 break;
@@ -363,7 +368,7 @@ public class World {
         }
     }
 
-    int distance(int x1, int y1, int x2, int y2) {
+    public int distance(int x1, int y1, int x2, int y2) {
         return (int) Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
     }
 
@@ -452,7 +457,7 @@ public class World {
                 } else if (item.getTile() == Tile.FOOD) {
 
                     player.addHealth(item.getValue());
-                }else if (item.getTile() == Tile.ARMOR) {
+                }else if (item.getTile() == Tile.INVISIBILITY_CLOAK) {
 
                     player.addProtection(item.getValue());
                 }
