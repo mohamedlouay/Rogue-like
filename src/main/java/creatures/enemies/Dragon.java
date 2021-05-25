@@ -13,6 +13,11 @@ public class Dragon extends Creature {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
     public Tile tile ;
+
+    public ArrayList<Center> getFireLine() {
+        return fireLine;
+    }
+
     private ArrayList<Center> fireLine = new ArrayList<>();
 
     private int attackDistance ;

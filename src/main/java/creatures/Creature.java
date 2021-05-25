@@ -95,6 +95,7 @@ public class Creature {
     public int getPositionY() {
         return positionY;
     }
+    public ArrayList<Item> getItemStolen() {return itemsStolen ;}
 
 
     //methodes

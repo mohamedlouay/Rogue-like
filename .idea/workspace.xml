@@ -10,18 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level">
-      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/BatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/DragonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/GoblinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/ZombieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/GameSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/PlayScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Zombie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,23 +88,9 @@
       <recent name="classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BatTest.move">
+  <component name="RunManager" selected="JUnit.DragonTest.move">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Rogue-like" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="Rogue-like" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Voiture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Voiture" />
       <module name="Rogue-like" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,17 +112,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConstructeurDuMondeTest.placeRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DragonTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rogue-like" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
+          <option name="PATTERN" value="creatures.enemies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classes.generationProcedurale" />
-      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.ConstructeurDuMondeTest" />
-      <option name="METHOD_NAME" value="placeRooms" />
+      <option name="PACKAGE_NAME" value="creatures.enemies" />
+      <option name="MAIN_CLASS_NAME" value="creatures.enemies.DragonTest" />
+      <option name="METHOD_NAME" value="move" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoblinTest.collect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creatures.enemies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creatures.enemies" />
+      <option name="MAIN_CLASS_NAME" value="creatures.enemies.GoblinTest" />
+      <option name="METHOD_NAME" value="collect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZombieTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rogue-like" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creatures.enemies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creatures.enemies" />
+      <option name="MAIN_CLASS_NAME" value="creatures.enemies.ZombieTest" />
+      <option name="METHOD_NAME" value="move" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DragonTest.move" />
+        <item itemvalue="JUnit.ZombieTest.move" />
+        <item itemvalue="JUnit.GoblinTest.collect" />
         <item itemvalue="JUnit.BatTest.move" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Voiture" />
-        <item itemvalue="JUnit.ConstructeurDuMondeTest.placeRooms" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621944030786</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="bat test">
+      <created>1621983000325</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1621983000325</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,7 +524,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
     <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
     <MESSAGE value="tests" />
@@ -527,6 +548,7 @@
     <MESSAGE value="create a Globin class : &#10;his behavior is :&#10;-steal items  , and run away if the player is in his zone ,&#10;the player get all the items stolen by the globen if hi kill him" />
     <MESSAGE value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
     <MESSAGE value="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire" />
-    <option name="LAST_COMMIT_MESSAGE" value="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire" />
+    <MESSAGE value="bat test" />
+    <option name="LAST_COMMIT_MESSAGE" value="bat test" />
   </component>
 </project>
