@@ -69,6 +69,10 @@ public class World {
     public ArrayList<Creature> getEnnemies() {
         return enemies;
     }
+
+    public ArrayList<Item> getItems() {
+        return items;
+    }
   public Tile[][] getTiles() {
         return tiles;
     }

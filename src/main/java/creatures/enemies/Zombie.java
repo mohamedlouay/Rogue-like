@@ -7,14 +7,14 @@ import generationProcedurale.Tile;
 import java.util.ArrayList;
 
 public class Zombie extends Creature {
-    public Tile tile ;
+
 
     private int counter = 1 ;
 
     public Zombie(Tile tile , int health, int attack, int defense, int experience, int positionX, int positionY) {
 
         super(tile,health,attack,defense,experience, positionX, positionY);
-        this.tile = tile ;
+
 
     }
 
@@ -65,7 +65,6 @@ public class Zombie extends Creature {
     private void switchVisibility() {
 
         this.counter = random.nextInt(5) ;
-        System.out.println("inside ozmbie tile  : "+ this.tile);
         if( (this.counter % 2 )== 0)
         {
             super.tile = Tile.ZOMBIE_INVISIBLE ;
