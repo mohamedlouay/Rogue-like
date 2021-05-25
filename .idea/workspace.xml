@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level">
-      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/DragonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/GoblinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/creatures/enemies/ZombieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Zombie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameSystem/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +53,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -88,7 +78,7 @@
       <recent name="classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DragonTest.move">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Rogue-like" />
@@ -162,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DragonTest.move" />
         <item itemvalue="JUnit.ZombieTest.move" />
         <item itemvalue="JUnit.GoblinTest.collect" />
         <item itemvalue="JUnit.BatTest.move" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -508,7 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621983000325</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="zombie&#10; testes">
+      <created>1621985171302</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1621985171302</updated>
+    </task>
+    <task id="LOCAL-00049" summary="goblin&#10; testes">
+      <created>1621985183534</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1621985183534</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,8 +528,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
-    <MESSAGE value="tester la génération procedurale . probleme : salles isolées" />
     <MESSAGE value="tests" />
     <MESSAGE value="tester la classe ConstructeurDuMonde qui génère les salles aléatoirement" />
     <MESSAGE value="génération procedurale :&#10; génère les salles aléatoirement" />
@@ -549,6 +551,8 @@
     <MESSAGE value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
     <MESSAGE value="create ARMOR ITEM with behaviour : &#10;&#10;give the player a protection for n round so he can avoid the enemies and can't be hurt with the fire" />
     <MESSAGE value="bat test" />
-    <option name="LAST_COMMIT_MESSAGE" value="bat test" />
+    <MESSAGE value="zombie&#10; testes" />
+    <MESSAGE value="goblin&#10; testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="goblin&#10; testes" />
   </component>
 </project>
