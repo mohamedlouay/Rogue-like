@@ -10,11 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753e38a3-b0aa-400d-99b7-5300904e77be" name="Default Changelist" comment="modification next level">
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Rogue_like_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Enemi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Goblin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Rogue_like_jar/Rogue-like.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/EnemyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Bat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creatures/enemies/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/ConstructeurDuMonde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generationProcedurale/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/ItemsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creatures/CreatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/creatures/EnemyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +41,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -49,7 +66,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -63,6 +80,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="creatures.enemies" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="classes.generationProcedurale" />
@@ -91,27 +111,15 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.Test" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Rogue-like" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorldBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.generationProcedurale.WorldBuilder" />
+    <configuration name="Voiture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Voiture" />
       <module name="Rogue-like" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.generationProcedurale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Voiture" />
         <item itemvalue="JUnit.ConstructeurDuMondeTest.placeRooms" />
         <item itemvalue="Application.ConstructeurDuMonde" />
-        <item itemvalue="Application.WorldBuilder" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +453,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620325468521</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update">
+      <created>1621199385359</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1621199385359</updated>
+    </task>
+    <task id="LOCAL-00044" summary="create Bat enemy , with his behavior &quot;duplicate when the player is in his zone&quot;">
+      <created>1621430254675</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1621430254675</updated>
+    </task>
+    <task id="LOCAL-00045" summary="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe">
+      <created>1621936347271</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936347271</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,9 +490,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ajouter la classe Player" />
-    <MESSAGE value="ajouter deplacement joueur" />
-    <MESSAGE value="ajouter la classe Box" />
     <MESSAGE value="modifier la classe Box" />
     <MESSAGE value="creation de l'enumartion Tile" />
     <MESSAGE value="creation de la classe WorldBuilder qui permet de générer la map à l'aide d'automates cellulaires . problem : salles isolées" />
@@ -486,6 +512,9 @@
     <MESSAGE value="ajoute de la porte et la clé" />
     <MESSAGE value="modification Affichage" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="create Bat enemy , with his behavior &quot;duplicate when the player is in his zone&quot;" />
+    <MESSAGE value="create a Globin class : &#10;his behavior is :&#10;-steal items  , and run away if the player is in his zone ,&#10;the player get all the items stolen by the globen if hi kill him" />
+    <MESSAGE value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Dragon Enemy with behaviour : &#10;&#10;DistanceAttack With Fire if the player in his X or Y axe" />
   </component>
 </project>

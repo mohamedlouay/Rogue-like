@@ -8,7 +8,7 @@ import generationProcedurale.Tile;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Dragon extends Creature implements Enemi {
+public class Dragon extends Creature {
 
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
@@ -34,7 +34,7 @@ public class Dragon extends Creature implements Enemi {
         //the distance of detecting the player is proportional of his level
 
         fireLineClear(tiles);
-        if (distance <= 10 + player.getLevel()) {// the player is in the enemy zone
+        if((distance <= 10 + player.getLevel())&&( player.tile==Tile.PLAYER))  {// the player is in the enemy zone
 
             if( distance <= 5)
             {
@@ -71,6 +71,10 @@ public class Dragon extends Creature implements Enemi {
     private void distanceAttack(Player player, Tile[][] tiles) {
         int min ;
         int max ;
+
+
+        if (player.tile==Tile.PLAYER_WITH_ARMOR) // player under protection
+            return  ;
 
 
         if (this.positionY == player.getPositionY()) // in the same axe Y

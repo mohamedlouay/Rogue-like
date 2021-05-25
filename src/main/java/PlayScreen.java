@@ -1,6 +1,7 @@
 import classes.armes.Lance;
 import creatures.Player;
 import creatures.PlayerInventory;
+import generationProcedurale.Tile;
 
 import java.util.Scanner;
 
@@ -57,46 +58,48 @@ public class PlayScreen {
                 {
                     System.out.print(ANSI_PURPLE+'#'+ANSI_RESET);
                 } else {
-                    char symbol = world.getTile(j, i).getSymbole();
-                    switch (symbol) {
-                        case '@':
-                            System.out.print(ANSI_BLUE+symbol+ANSI_RESET);
+                    Tile tile = world.getTile(j, i);
+                    switch (tile) {
+                        case PLAYER:
+                            System.out.print(ANSI_BLUE+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case '*':
-                            System.out.print(ANSI_BLACK+ANSI_PURPLE_BACKGROUND+symbol+ANSI_RESET);
+                        case PLAYER_WITH_ARMOR:
+
+                            System.out.print(ANSI_GREEN+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case '$':
-                            System.out.print(ANSI_BLACK+ANSI_YELLOW_BACKGROUND+symbol+ANSI_RESET);
+                        case FOOD:
+                            System.out.print(ANSI_BLACK+ANSI_PURPLE_BACKGROUND+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'D':
-                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                        case ARMOR:
+                            System.out.print(ANSI_BLACK+ANSI_GREEN_BACKGROUND+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'S':
-                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                        case MONEY:
+                            System.out.print(ANSI_BLACK+ANSI_YELLOW_BACKGROUND+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'W':
-                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                        case ZOMBIE:
+                        case  BAT:
+                        case GOBLIN:
+                        case DRAGON:
+                        case FIRE:
+                            System.out.print(ANSI_RED+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'Z':
-                            System.out.print(ANSI_RED+symbol+ANSI_RESET);
+                        case PORTE:
+                            System.out.print(ANSI_GREEN+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'X':
-                            System.out.print(ANSI_GREEN+'O'+ANSI_RESET);
+                        case cle:
+                            System.out.print(ANSI_YELLOW+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case '!':
-                            System.out.print(ANSI_YELLOW+symbol+ANSI_RESET);
+                        case  c:
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'C':
-                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                        case l:
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+tile.getSymbole()+ANSI_RESET);
                             break;
-                        case 'L':
-                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
-                            break;
-                        case 'E':
-                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+symbol+ANSI_RESET);
+                        case e:
+                            System.out.print(ANSI_YELLOW_BACKGROUND+ANSI_BLACK+tile.getSymbole()+ANSI_RESET);
                             break;
                         default:
-                            System.out.print(symbol);
+                            System.out.print(tile.getSymbole());
 
                     }
                 }
@@ -122,6 +125,7 @@ public class PlayScreen {
         System.out.println("----------------------------------------------------------------------------------------------------");
         System.out.println(ANSI_BLUE+" |LEVEL : " + player.getLevel() +ANSI_RESET+
                 ANSI_GREEN+" |HEALTH : " + player.getHealth() +ANSI_RESET+
+                ANSI_GREEN+" |PROTECTION : " + player.getProtection() +ANSI_RESET+
                 ANSI_RED+" |ATTACK : " + player.getAttack() +ANSI_RESET+
                 ANSI_YELLOW+" |Cle : " + player.aLACle() +ANSI_RESET+
                 ANSI_BLUE+" |DEFENSE : " + player.getDefense() +ANSI_RESET+

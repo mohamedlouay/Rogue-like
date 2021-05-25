@@ -15,6 +15,7 @@ public class ItemsFactory {
         switch (t){
 
             case MONEY: return new Item(Tile.MONEY,100+evolution,x,y) ;
+            case ARMOR: return  new Item(Tile.ARMOR,10 + evolution,x,y);
             case FOOD: return new Item(Tile.FOOD,30+evolution,x,y) ;
 
 

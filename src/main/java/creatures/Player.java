@@ -4,6 +4,7 @@ import classes.armes.Arme;
 import classes.armes.Epee;
 import classes.armes.Lance;
 import classes.armes.dague;
+import generationProcedurale.Tile;
 
 import java.util.ArrayList;
 
@@ -12,12 +13,14 @@ public class Player extends Creature {
     private int level = 1;
     private int argent=0;
     private boolean aLaCle=false;
+    private int protection =0;
 
     ArrayList<Arme> armes = new ArrayList<>();
     private int arme_courante = 0;
 
 
     public Player() {
+        super.tile = Tile.PLAYER;
         this.argent=10;
         this.health = 1000 ;
         this.experience=0;
@@ -80,6 +83,13 @@ public class Player extends Creature {
     public void setLevel(int level) {
         this.level = level;
     }
+
+    public void setTile(Tile tile) {
+        super.tile = tile;
+    }
+
+
+
     public void  sous_argent(int a){
         this.argent-=a;
     }
@@ -87,6 +97,8 @@ public class Player extends Creature {
     public void addHealth (int health) {
         this.health += health;
     }
+
+
 
 
 
@@ -153,6 +165,17 @@ public class Player extends Creature {
         }
         return result ;
 
+    }
+
+
+    public void addProtection (int value)
+    {   if ((protection + value)>0)
+        protection =+ value ;
+    }
+
+    public int getProtection()
+    {
+        return  this.protection ;
     }
 
 

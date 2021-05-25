@@ -58,7 +58,7 @@ public class GameSystem {
     }
 
 
-    public static  void pause() {
+    public  static   void pause() {
         System.out.println("Press Any Key To Continue...");
         new Scanner(System.in).nextLine();
     }

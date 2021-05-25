@@ -305,18 +305,25 @@ public class ConstructeurDuMonde {
 
                     proba = random.nextInt(10) + 1;
 
-                    switch (proba) {
+                    switch (8) {
                         case 1:
                         case 2:
                         case 3:
                         case 4:
                         case 5:
                         case 6:
-                        case 7:
-                        case 8:
                             //probabilty of 80% that the items is food
                             setTile(x, y, Tile.FOOD);
                             items.add(ItemsFactory.createNewItem(Tile.FOOD, level, x, y));
+                            break;
+
+
+
+                        case 7:
+                        case 8:
+                            //probabilty of 20% that the items is armor
+                            setTile(x, y, Tile.ARMOR);
+                            items.add(ItemsFactory.createNewItem(Tile.ARMOR, level, x, y));
                             break;
 
 

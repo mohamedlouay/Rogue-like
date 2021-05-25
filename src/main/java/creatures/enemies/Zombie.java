@@ -6,7 +6,7 @@ import generationProcedurale.Tile;
 
 import java.util.ArrayList;
 
-public class Zombie extends Creature implements Enemi {
+public class Zombie extends Creature {
     public Tile tile ;
 
     private int counter = 1 ;
@@ -31,7 +31,7 @@ public class Zombie extends Creature implements Enemi {
         //the distance of detecting the player is proportional of his level
 
 
-        if (distance <= 10 + player.getLevel()) {// the player is in the zombie  zone
+        if ((distance <= 10 + player.getLevel())&&( player.tile==Tile.PLAYER)) {// the player is in the zombie  zone
 
             switchVisibility();
 

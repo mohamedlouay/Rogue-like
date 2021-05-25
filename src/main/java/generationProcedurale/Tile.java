@@ -11,7 +11,7 @@ public static final String ANSI_WHITE = "\u001B[37m";*/
 
 public enum Tile {
 
-    PORTE('X'),
+    PORTE('0'),
     cle('!'),
 
     c('C'),
@@ -27,9 +27,14 @@ public enum Tile {
     WINDOW('<'),
 
     FOOD ('*') ,
+    ARMOR (')') ,
     MONEY ('$') ,
 
     PLAYER('@') ,
+    PLAYER_WITH_ARMOR('@') ,
+
+
+
     ZOMBIE('Z'),
     ZOMBIE_INVISIBLE('.'),
     BAT('B'),

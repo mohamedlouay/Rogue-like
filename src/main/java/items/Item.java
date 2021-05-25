@@ -33,4 +33,12 @@ public class Item {
     public int getY() {
         return this.y;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Item{" +"type=" + tile +", value=" + value +
+                '}';
+    }
 }
